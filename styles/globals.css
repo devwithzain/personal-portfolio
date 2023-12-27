@@ -2,8 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+	.h-calc-100 {
+		height: calc(100% + 300px);
+	}
+}
+
 html {
 	font-size: 6.25%;
+}
+
+body {
+	overflow: hidden;
 }
 
 @media (max-width: 1490px) {
