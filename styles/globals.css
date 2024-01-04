@@ -2,23 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-	.h-calc-100 {
-		height: calc(100% + 300px);
-	}
+@font-face {
+	src: url("../font/ppneuemontreal-medium.otf");
+	font-family: montreal;
 }
 
 html {
 	font-size: 6.25%;
 }
 
-body {
-	overflow: hidden;
-}
-
 @media (max-width: 1490px) {
 	html {
-		font-size: 5.2%;
+		font-size: 5%;
 	}
 }
 @media (max-width: 1060px) {
