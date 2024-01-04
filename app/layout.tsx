@@ -1,7 +1,5 @@
 import "@styles/globals.css";
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
-const poppins = Poppins({ weight: "400", subsets: ["latin"] });
 export const metadata: Metadata = {
 	title: "Muhammad Zain",
 	description: "My Personal Portfolio",
@@ -13,7 +11,9 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className={poppins.className}>{children}</body>
+			<body className="bg-[#E1E1E1] overflow-hidden font-montreal">
+				{children}
+			</body>
 		</html>
 	);
 }
