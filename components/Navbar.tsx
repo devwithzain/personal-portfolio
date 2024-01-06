@@ -21,7 +21,7 @@ export default function Navbar() {
 					</div>
 				</div>
 				<div className="w-[200rem] flex items-center justify-center">
-					<h1 className="text-[30rem] font-semibold tracking-wider text-[#202020] uppercase">
+					<h1 className="text-[30rem] font-bold tracking-wider text-[#202020] uppercase">
 						Zain
 					</h1>
 				</div>
@@ -31,7 +31,7 @@ export default function Navbar() {
 							Portfolio
 						</h1>
 					</div>
-					<div className="flex gap-x-[3rem] items-center">
+					<div className="flex gap-x-[05rem] items-center">
 						<span className="w-[18rem] tracking-wider h-[3rem] rounded-[10rem] bg-[#ACAAAC]"></span>
 						<h1 className="text-[15rem] text-[#202020] font-medium">Vol 01 </h1>
 					</div>
