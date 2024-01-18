@@ -37,3 +37,10 @@ export type TlogoMarqueeProps = {
     children: React.ReactNode;
     baseVelocity: number;
 };
+
+export type TtextHoverProps = {
+    titile1: string;
+    subTitle1: string;
+    titile2: string;
+    subTitle2: string;
+};
