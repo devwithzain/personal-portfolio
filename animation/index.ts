@@ -1,6 +1,9 @@
 export { default as PreLoad } from './PreLoad';
 export { default as TextMask } from './TextMask';
 export { default as Word } from './Word';
-export { default as TextMarquee } from './TextMarquee';
 export { default as Parallax } from './Parallax';
 export { default as Sticky } from './Sticky';
+export { default as LinkHover } from './LinkHover';
+export { default as Hover } from './hover/Hover';
+export { default as Marquee } from './LogoMarquee';
+export { default as TextHover } from './TextHover';
