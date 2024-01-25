@@ -1,8 +1,10 @@
 "use client";
-import { PreLoad } from "@components";
+import { Home } from "@components";
+import { PreLoad } from "@animation";
 import Lenis from "@studio-freight/lenis";
 import { useEffect, useState } from "react";
 import { AnimatePresence } from "framer-motion";
+
 export default function App() {
 	const [isLoading, setIsLoading] = useState(true);
 
@@ -24,13 +26,10 @@ export default function App() {
 			}, 3000);
 		})();
 	}, []);
-
 	return (
 		<>
 			<AnimatePresence mode="wait">{isLoading && <PreLoad />}</AnimatePresence>
-			<div className="w-full h-[300svh] flex items-center justify-center">
-				<h1 className="text-[50px] uppercase font-bold">Home</h1>
-			</div>
+			{isLoading === false ? <Home /> : ""}
 		</>
 	);
 }
