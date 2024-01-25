@@ -44,3 +44,8 @@ export type TtextHoverProps = {
     titile2: string;
     subTitle2: string;
 };
+
+export type TparallaxProps = {
+    images: StaticImageData[];
+    y: MotionValue<number>;
+};
