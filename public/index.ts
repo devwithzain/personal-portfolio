@@ -1,0 +1,12 @@
+export { default as c2s } from './c2montreal.png';
+export { default as locomotive } from './locomotive.png';
+export { default as silencio } from './silencio.png';
+export { default as officestudio } from './officestudio.png';
+export { default as threeM } from './3m.svg';
+export { default as brastoolStore } from './barstool-store.svg';
+export { default as budweiser } from './budweiser.svg';
+export { default as buzzFedd } from './buzzfeed.svg';
+export { default as forbes } from './forbes.svg';
+export { default as macys } from './macys.svg';
+export { default as mensHealth } from './menshealth.svg';
+export { default as mrBeast } from './mrbeast.svg';
