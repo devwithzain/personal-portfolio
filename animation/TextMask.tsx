@@ -8,9 +8,7 @@ export default function MaskText({ children }: { children: string[] }) {
 	});
 
 	return (
-		<div
-			ref={ref}
-			className="">
+		<div ref={ref}>
 			{children.map((phrase, index) => (
 				<div
 					key={index}
