@@ -51,11 +51,11 @@ export default function Loader() {
 			{dimension.width > 0 && (
 				<>
 					<motion.p
-						className="flex text-white text-[42px] items-center absolute z-10"
+						className="flex text-white text-[42rem] items-center absolute z-10"
 						variants={opacity}
 						initial="initial"
 						animate="enter">
-						<span className="block w-[10px] h-[10px] bg-white rounded-full mr-[10px]"></span>
+						<span className="block w-[10px] h-[10px] bg-white rounded-full mr-[10px]" />
 						{words[index]}
 					</motion.p>
 					<svg className="absolute top-0 w-full h-calc-100">
@@ -63,7 +63,8 @@ export default function Loader() {
 							className="fill-[#202020]"
 							variants={curve}
 							initial="initial"
-							exit="exit"></motion.path>
+							exit="exit"
+						/>
 					</svg>
 				</>
 			)}
