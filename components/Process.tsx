@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { processItem } from "@constants";
 import { TextHover, TextMask } from "@animation";
-
+import { motion, AnimatePresence } from "framer-motion";
 export default function Process() {
 	const [activeAccordion, setActiveAccordion] = useState(null); // State to track active accordion
 
@@ -49,11 +49,21 @@ export default function Process() {
 								{activeAccordion === item.id ? "-" : "+"}
 							</button>
 						</div>
-						{activeAccordion === item.id && ( // Display content if accordion is active
-							<div className="transition-all duration-500 ease-in-out fade-in active">
-								<p className="text-[22rem] mt-[10rem]">{item.para}</p>
-							</div>
-						)}
+						<AnimatePresence>
+							{activeAccordion === item.id && ( // Display content if accordion is active
+								<motion.div
+									initial={{ opacity: 0, height: 0 }}
+									animate={{ opacity: 1, height: "auto" }}
+									exit={{ opacity: 0, height: 0 }}
+									transition={{
+										ease: "anticipate",
+										duration: 1,
+										type: "tween",
+									}}>
+									<p className="text-[22rem] mb-[10rem]">{item.para}</p>
+								</motion.div>
+							)}
+						</AnimatePresence>
 					</div>
 				))}
 			</div>
