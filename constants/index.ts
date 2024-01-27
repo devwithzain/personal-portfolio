@@ -1,4 +1,4 @@
-import { brastoolStore, budweiser, buzzFedd, c2s, forbes, locomotive, macys, mensHealth, mrBeast, officestudio, silencio, threeM } from "@public";
+import { c2s, chatgpt, code, css3, docker, figma, html, js, locomotive, mongodb, next, node, officestudio, prisma, python, silencio, tailwind, typescript } from "@public";
 
 export const project = [
     {
@@ -112,34 +112,59 @@ export const TfooterItem = [
 export const skillsData = [
     {
         id: 1,
-        src: threeM
+        src: html
     },
     {
         id: 2,
-        src: brastoolStore
+        src: node
     },
     {
         id: 3,
-        src: budweiser
+        src: js
     },
     {
         id: 4,
-        src: buzzFedd
+        src: tailwind
+
     },
     {
         id: 5,
-        src: forbes
+        src: css3
     },
     {
         id: 6,
-        src: macys
+        src: docker
     },
     {
         id: 7,
-        src: mensHealth
+        src: python
     },
     {
         id: 8,
-        src: mrBeast
+        src: figma
+    },
+    {
+        id: 9,
+        src: code
+    },
+    {
+        id: 10,
+        src: chatgpt
+    },
+    {
+        id: 11,
+        src: typescript
+    },
+    {
+        id: 12,
+        src: mongodb
+    },
+    {
+        id: 13,
+        src: next
+    },
+    {
+        id: 14,
+        src: prisma
     },
 ];
