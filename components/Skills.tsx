@@ -4,13 +4,13 @@ import { skillsData } from "@constants";
 
 export default function Skills() {
 	return (
-		<section className="my-[100rem]">
+		<section className="my-[150rem]">
 			<div className="w-full flex flex-col gap-y-[50px]">
 				<Marquee baseVelocity={-1}>
 					<div className="flex m-0 gap-x-[40px] items-center">
 						{skillsData.map((item) => (
 							<div
-								className="w-[200px] h-[100]"
+								className="w-[200px] h-[100px]"
 								key={item.id}>
 								<Image
 									src={item.src}
@@ -27,7 +27,7 @@ export default function Skills() {
 					<div className="flex m-0 gap-x-[40px] items-center">
 						{skillsData.map((item) => (
 							<div
-								className="w-[200px] h-[100]"
+								className="w-[200px] h-[100px]"
 								key={item.id}>
 								<Image
 									src={item.src}
