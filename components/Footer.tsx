@@ -12,7 +12,7 @@ export default function Footer() {
 				<Navbar />
 				<div className="flex items-center justify-center flex-col gap-y-[10rem]">
 					<div>
-						<h1 className="text-[#202020] uppercase font-medium mb-[20rem] tracking-[5rem] text-[150rem]">
+						<h1 className="text-[#202020] uppercase font-medium mb-[20rem] tracking-[5rem] text-[150rem] sm:text-[90rem]">
 							<TextMask>{phrases}</TextMask>
 						</h1>
 					</div>
