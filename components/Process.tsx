@@ -20,11 +20,11 @@ export default function Process() {
 
 	return (
 		<section className="w-full my-[100rem]">
-			<div className="flex items-center gap-x-[100rem] border-b border-[#8D8D8D]">
+			<div className="flex sm:flex-col lg:items-center gap-x-[100rem] border-b border-[#8D8D8D]">
 				<h1 className="text-[#202020] uppercase tracking-[5rem] text-[100rem] font-medium">
 					<TextMask>{phrases}</TextMask>
 				</h1>
-				<p className="text-[30rem] text-[#202020] mt-[30rem] ml-[40rem]">
+				<p className="text-[30rem] text-[#202020] lg:mt-[30rem] sm:mb-[30rem] lg:ml-[40rem]">
 					Things i can help you with:
 				</p>
 			</div>
@@ -32,7 +32,7 @@ export default function Process() {
 				{processItem.map((item) => (
 					<div
 						key={item.id}
-						className="w-[60%] flex-col flex py-[15rem] border-b border-black">
+						className="sm:w-full w-[60%] flex-col flex py-[15rem] border-b border-black">
 						<div
 							className="flex items-center justify-between transition-all duration-500 ease-in-out cursor-pointer"
 							onClick={() => toggleAccordion(item.id)} // Toggle accordion on click
