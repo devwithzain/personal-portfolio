@@ -13,16 +13,16 @@ export default function Hero() {
 			<Navbar />
 			<div className="h-[90svh] flex flex-col items-center justify-around gap-y-[50rem] py-[10rem] sm:pt-[100px]">
 				<div>
-					<h1 className="text-[#202020] uppercase tracking-[5rem] h-[150rem] sm:text-[100rem] text-[130rem] font-semibold">
+					<h1 className="text-[#202020] uppercase tracking-[5rem] h-[150rem] sm:text-[90rem] text-[130rem] font-semibold">
 						<TextMask>{phrases1}</TextMask>
 					</h1>
-					<h1 className="text-[#202020] uppercase sm:ml-[0rem] ml-[500rem] tracking-[5rem] h-[150rem] sm:text-[100rem] text-[130rem] font-semibold">
+					<h1 className="text-[#202020] uppercase sm:ml-[0rem] ml-[500rem] tracking-[5rem] h-[150rem] sm:text-[90rem] text-[130rem] font-semibold">
 						<TextMask>{phrases2}</TextMask>
 					</h1>
-					<h1 className="text-[#202020] uppercase sm:ml-[0rem] ml-[300rem] tracking-[5rem] h-[150rem] sm:text-[100rem] text-[130rem] font-semibold">
+					<h1 className="text-[#202020] uppercase sm:ml-[0rem] ml-[300rem] tracking-[5rem] h-[150rem] sm:text-[90rem] text-[130rem] font-semibold">
 						<TextMask>{phrases3}</TextMask>
 					</h1>
-					<h1 className="text-[#202020] uppercase sm:ml-[0rem] ml-[700rem] tracking-[5rem] h-[150rem] sm:text-[100rem] text-[130rem] font-semibold">
+					<h1 className="text-[#202020] uppercase sm:ml-[0rem] ml-[700rem] tracking-[5rem] h-[150rem] sm:text-[90rem] text-[130rem] font-semibold">
 						<TextMask>{phrases4}</TextMask>
 					</h1>
 				</div>
