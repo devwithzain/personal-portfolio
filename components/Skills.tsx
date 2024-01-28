@@ -10,14 +10,14 @@ export default function Skills() {
 					<div className="flex m-0 gap-x-[40px] items-center">
 						{skillsData.map((item) => (
 							<div
-								className="w-[200px] h-[100px]"
+								className="w-[200rem] h-[100rem]"
 								key={item.id}>
 								<Image
 									src={item.src}
 									alt="asd"
 									width={200}
 									height={100}
-									className="w-[200px] h-[100px]"
+									className="w-[200rem] h-[100rem]"
 								/>
 							</div>
 						))}
@@ -27,14 +27,14 @@ export default function Skills() {
 					<div className="flex m-0 gap-x-[40px] items-center">
 						{skillsData.map((item) => (
 							<div
-								className="w-[200px] h-[100px]"
+								className="w-[200rem] h-[100rem]"
 								key={item.id}>
 								<Image
 									src={item.src}
 									alt="asd"
 									width={200}
 									height={100}
-									className="w-[200px] h-[100px]"
+									className="w-[200rem] h-[100rem]"
 								/>
 							</div>
 						))}

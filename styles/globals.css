@@ -8,6 +8,7 @@
 }
 
 html {
+	overflow: hidden;
 	font-size: 6.25%;
 }
 
