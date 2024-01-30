@@ -1,23 +1,38 @@
-import { c2s, chatgpt, code, css3, docker, figma, html, js, locomotive, mongodb, next, node, officestudio, prisma, python, silencio, tailwind, typescript } from "@public";
+import { c2s, chatgpt, code, css3, docker, figma, hoobank, html, ipdc, js, lassles, metaverse, mongodb, next, nike, node, prisma, python, silencio, tailwind, typescript } from "@public";
 
 export const project = [
     {
-        title: "C2 Montreal",
+        title: "Github Landing Page",
         img: c2s,
         color: "#000000",
     },
     {
-        title: "Office Studio",
-        img: officestudio,
+        title: "IPDC Finance",
+        img: ipdc,
         color: "#8C8C8C",
     },
     {
-        title: "Locomotive",
-        img: locomotive,
+        title: "Lasless VPN",
+        img: lassles,
         color: "#EFE8D3",
     },
     {
-        title: "Silencio",
+        title: "Nike Landing Page",
+        img: nike,
+        color: "#706D63",
+    },
+    {
+        title: "Metaverse",
+        img: metaverse,
+        color: "#706D63",
+    },
+    {
+        title: "HooBank",
+        img: hoobank,
+        color: "#706D63",
+    },
+    {
+        title: "GPT-4",
         img: silencio,
         color: "#706D63",
     },
@@ -35,7 +50,7 @@ export const words = [
 ];
 
 export const paragraph =
-    "I’m a multi-disciplinary designer and Webflow developer, passionate about crafting ideas, visuals, and typography into unforgettable digital experiences.  With a genuine belief in the transformative power of design, I am constantly exploring the vast creative world, from architecture, art, graphic design, illustration, motion design, and UX design. My journey began in architecture, however, my passion for limitless creativity led me to explore the endless possibilities that creative development has to offer.";
+    "I’m a multi-disciplinary designer and Next js developer, passionate about crafting ideas, visuals, and typography into unforgettable digital experiences.  With a genuine belief in the transformative power of design, I am constantly exploring the vast creative world, from architecture, art, graphic design, illustration, motion design, and UX design. My passion for limitless creativity led me to explore the endless possibilities that creative development has to offer.";
 
 export const images = [
     "1.jpg",
@@ -59,7 +74,7 @@ export const processItem = [
         id: "1",
         title: "Art",
         subTitle: "Direction",
-        para: "My process starts by predicting a crafting a visual narrative for the project, making it memorable, striking, and beautiful. To ensure a successful outcome, I place great importance on deeply understanding the project brief and client needs. This involves identifying project goals, functional specifications, and conducting thorough research to gain insights into competitors and target audiences."
+        para: "My process starts by predicting and crafting a visual narrative for the project, making it memorable, striking, and beautiful. To ensure a successful outcome, I place great importance on deeply understanding the project brief and client needs. This involves identifying project goals, functional specifications, and conducting thorough research to gain insights into competitors and target audiences."
     },
     {
         id: "2",
@@ -69,9 +84,9 @@ export const processItem = [
     },
     {
         id: "3",
-        title: "Webflow",
+        title: "Next JS",
         subTitle: "Development",
-        para: "Webflow development lies at the core of what I offer, with a focus on custom design tailored to your specific needs, setting your business apart from the competition. The main objective is to deliver a responsive website that is performant, pixel-perfect, and offers a fluid user experience with carefully crafted animations and interactions."
+        para: "Next js development lies at the core of what I offer, with a focus on custom design tailored to your specific needs, setting your business apart from the competition. The main objective is to deliver a responsive website that is performant, pixel-perfect, and offers a fluid user experience with carefully crafted animations and interactions."
     },
     {
         id: "4",

@@ -1,8 +1,3 @@
-export { default as c2s } from './c2montreal.png';
-export { default as locomotive } from './locomotive.png';
-export { default as silencio } from './silencio.png';
-export { default as officestudio } from './officestudio.png';
-
 export { default as html } from './html5.svg';
 export { default as css3 } from './css3.svg';
 export { default as js } from './square-js.svg';
@@ -17,3 +12,12 @@ export { default as mongodb } from './mongodb.svg';
 export { default as chatgpt } from './chatgpt.svg';
 export { default as next } from './next-js.svg';
 export { default as figma } from './figma.svg';
+
+export { default as ipdc } from './ipdc.png';
+export { default as lassles } from './lasless.png';
+export { default as metaverse } from './metaverse.png';
+export { default as nike } from './nike.png';
+export { default as carhub } from './carhub.png';
+export { default as hoobank } from './hoobank.png';
+export { default as c2s } from './c2montreal.png';
+export { default as silencio } from './silencio.png';
