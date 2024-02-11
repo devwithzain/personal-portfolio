@@ -8,16 +8,15 @@ export default function Hover() {
 	return (
 		<main className="flex items-center justify-center">
 			<div className="w-full flex flex-col items-center justify-center">
-				{project.map((project, index) => {
-					return (
-						<Project
-							index={index}
-							title={project.title}
-							setModal={setModal}
-							key={index}
-						/>
-					);
-				})}
+				{project.map((project, index) => (
+					<Project
+						index={index}
+						title={project.title}
+						setModal={setModal}
+						key={index}
+						href={project.href}
+					/>
+				))}
 			</div>
 			<Modal
 				modal={modal}

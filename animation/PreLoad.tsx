@@ -47,7 +47,7 @@ export default function Loader() {
 			variants={slideUp}
 			initial="initial"
 			exit="exit"
-			className="h-screen w-screen flex items-center justify-center fixed z-10 bg-[#202020]">
+			className="h-screen w-screen flex items-center justify-center fixed z-20 bg-[#202020] ">
 			{dimension.width > 0 && (
 				<>
 					<motion.p
