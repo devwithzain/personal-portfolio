@@ -87,7 +87,8 @@ export default function Modal({ modal, projects }: TmodalProps) {
 				className="w-[80rem] h-[80rem] rounded-[50%] bg-[#455ce9] text-white absolute z-10 flex items-center justify-center text-[14rem] font-light pointer-events-none"
 				variants={scaleAnimation}
 				initial="initial"
-				animate={active ? "enter" : "closed"}></motion.div>
+				animate={active ? "enter" : "closed"}
+			/>
 			<motion.div
 				ref={cursorLabel}
 				className="w-[80rem] h-[80rem] rounded-[50%] bg-[#455ce9] text-white absolute z-10 flex items-center justify-center text-[14rem] font-light pointer-events-none"
