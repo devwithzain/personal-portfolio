@@ -31,6 +31,7 @@ export type TprojectProps = {
     title: string,
     index: number,
     setModal: (modal: { active: boolean; index: number; }) => void;
+    href: string;
 };
 
 export type TlogoMarqueeProps = {
