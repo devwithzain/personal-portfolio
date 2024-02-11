@@ -1,40 +1,48 @@
-import { c2s, chatgpt, code, css3, docker, figma, hoobank, html, ipdc, js, lassles, metaverse, mongodb, next, nike, node, prisma, python, silencio, tailwind, typescript } from "@public";
+import { chatgpt, code, css3, docker, figma, github, gpt3, hoobank, html, ipdc, js, lassles, metaverse, mongodb, next, nike, node, prisma, python, react_query, redux, rhf, tailwind, trpc, typescript, zod } from "@public";
 
 export const project = [
     {
         title: "Github Landing Page",
-        img: c2s,
-        color: "#000000",
+        img: github,
+        color: "#0C1015",
+        href: "https://github-landing-page-nu.vercel.app/"
+
     },
     {
         title: "IPDC Finance",
         img: ipdc,
-        color: "#8C8C8C",
-    },
-    {
-        title: "Lasless VPN",
-        img: lassles,
-        color: "#EFE8D3",
+        color: "#FFEAF5",
+        href: "https://infd-finance-landing-page.vercel.app/"
     },
     {
         title: "Nike Landing Page",
         img: nike,
-        color: "#706D63",
+        color: "#ECEEFF",
+        href: "https://nike-woad-one.vercel.app/"
     },
     {
         title: "Metaverse",
         img: metaverse,
-        color: "#706D63",
+        color: "#1A232E",
+        href: "https://metaverse-zainali97.vercel.app/"
     },
     {
         title: "HooBank",
         img: hoobank,
-        color: "#706D63",
+        color: "#172235",
+        href: "https://hoobank-app-pi.vercel.app/"
     },
     {
-        title: "GPT-4",
-        img: silencio,
-        color: "#706D63",
+        title: "Lasless VPN",
+        img: lassles,
+        color: "#FFECEC",
+        href: "https://lasles-vpn-tau.vercel.app/"
+    },
+    {
+        title: "GPT-3",
+        img: gpt3,
+        color: "#012043",
+        href: "https://gpt-3-open-ai-green.vercel.app/"
     },
 ];
 
@@ -99,12 +107,12 @@ export const processItem = [
 export const TfooterItem = [
     {
         id: 1,
-        href: "https://www.linkedin.com/zainalisiddiqui",
+        href: "https://www.linkedin.com/in/zainalisiddiqui/",
         title: "Linkedin"
     },
     {
         id: 2,
-        href: "https://www.linkedin.com/zainalisiddiqui",
+        href: "https://github.com/ZainAliSiddiqui",
         title: "Github"
     },
     {
@@ -181,5 +189,25 @@ export const skillsData = [
     {
         id: 14,
         src: prisma
+    },
+    {
+        id: 15,
+        src: trpc
+    },
+    {
+        id: 16,
+        src: react_query
+    },
+    {
+        id: 17,
+        src: rhf
+    },
+    {
+        id: 18,
+        src: redux
+    },
+    {
+        id: 19,
+        src: zod
     },
 ];
