@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Navbar from "./Navbar";
 import { motion } from "framer-motion";
 import { TfooterItem } from "@constants";
 import { LinkHover, TextMask } from "@animation";
@@ -7,12 +6,12 @@ import { LinkHover, TextMask } from "@animation";
 export default function Footer() {
 	const phrases = ["HAVE AN IDEA?"];
 	return (
-		<section className="w-full">
-			<div className="flex py-[20rem] justify-between flex-col h-screen">
-				<Navbar />
-				<div className="flex items-center justify-center flex-col gap-y-[10rem]">
+		<section className="w-full h-screen">
+			<div className="flex items-center justify-between flex-col h-full">
+				<div className="w-full h-[8vh] " />
+				<div className="flex items-center justify-center flex-col gap-y-[10rem] w-full h-auto ">
 					<div>
-						<h1 className="text-[#202020] uppercase font-medium mb-[20rem] tracking-[5rem] text-[150rem] sm:text-[90rem]">
+						<h1 className="text-[#202020] uppercase tracking-[5rem] leading-none sm:text-[80rem] md:text-[100rem] text-[140rem] font-semibold">
 							<TextMask>{phrases}</TextMask>
 						</h1>
 					</div>
@@ -35,13 +34,14 @@ export default function Footer() {
 						</Link>
 					</motion.div>
 				</div>
-				<div className="flex items-center justify-between w-full">
+				<div className="flex items-center justify-between w-full h-[8vh] ">
 					<ul className="flex justify-between items-center w-full">
 						{TfooterItem.map((item) => (
 							<li key={item.id}>
 								<Link
 									className="text-[20rem] text-[#202020] capitalize tracking-wider"
-									href={item.href}>
+									href={item.href}
+									target="_blank">
 									<LinkHover>{item.title}</LinkHover>
 								</Link>
 							</li>
