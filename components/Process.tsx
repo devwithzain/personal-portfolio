@@ -21,7 +21,7 @@ export default function Process() {
 	return (
 		<section className="w-full my-[100rem]">
 			<div className="flex sm:flex-col lg:items-center gap-x-[100rem] border-b border-[#8D8D8D]">
-				<h1 className="text-[#202020] uppercase tracking-[5rem] text-[100rem] font-medium">
+				<h1 className="text-[#202020] uppercase tracking-[5rem] leading-none sm:text-[80rem] md:text-[100rem] text-[140rem] font-semibold">
 					<TextMask>{phrases}</TextMask>
 				</h1>
 				<p className="text-[30rem] text-[#202020] lg:mt-[30rem] sm:mb-[30rem] lg:ml-[40rem]">
