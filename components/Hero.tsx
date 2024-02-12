@@ -11,37 +11,42 @@ export default function Hero() {
 	return (
 		<section className="w-full h-[100svh]">
 			<Navbar />
-			<div className="h-[90svh] flex flex-col items-center justify-around gap-y-[50rem] py-[10rem] sm:pt-[100px]">
-				<div>
-					<h1 className="text-[#202020] uppercase tracking-[5rem] h-[150rem] sm:text-[80rem] md:text-[100rem] text-[150rem] font-semibold">
-						<TextMask>{phrases1}</TextMask>
-					</h1>
-					<h1 className="text-[#202020] uppercase sm:ml-[0rem] md:ml-[250rem] ml-[500rem] tracking-[5rem] h-[150rem] sm:text-[80rem] md:text-[100rem] text-[150rem] font-semibold">
-						<TextMask>{phrases2}</TextMask>
-					</h1>
-					<h1 className="text-[#202020] uppercase sm:ml-[0rem] md:ml-[150rem] ml-[300rem] tracking-[5rem] h-[150rem] sm:text-[80rem] md:text-[100rem] text-[150rem] font-semibold">
-						<TextMask>{phrases3}</TextMask>
-					</h1>
-					<h1 className="text-[#202020] uppercase sm:ml-[0rem] md:ml-[350rem] ml-[700rem] tracking-[5rem] h-[150rem] sm:text-[80rem] md:text-[100rem] text-[150rem] font-semibold">
-						<TextMask>{phrases4}</TextMask>
-					</h1>
+			<div className="w-full h-full flex flex-col justify-between items-center">
+				<div className="w-full h-[8vh]" />
+				<div className="w-full h-auto flex flex-col items-center">
+					<div>
+						<h1 className="text-[#202020] uppercase tracking-[5rem] leading-none sm:text-[80rem] md:text-[100rem] text-[140rem] font-semibold">
+							<TextMask>{phrases1}</TextMask>
+						</h1>
+						<h1 className="text-[#202020] uppercase sm:ml-[0rem] md:ml-[250rem] ml-[500rem] tracking-[5rem] leading-none sm:text-[80rem] md:text-[100rem] text-[140rem] font-semibold">
+							<TextMask>{phrases2}</TextMask>
+						</h1>
+						<h1 className="text-[#202020] uppercase sm:ml-[0rem] md:ml-[150rem] ml-[300rem] tracking-[5rem] leading-none sm:text-[80rem] md:text-[100rem] text-[140rem] font-semibold">
+							<TextMask>{phrases3}</TextMask>
+						</h1>
+						<h1 className="text-[#202020] uppercase sm:ml-[0rem] md:ml-[350rem] ml-[700rem] tracking-[5rem] leading-none sm:text-[80rem] md:text-[100rem] text-[140rem] font-semibold">
+							<TextMask>{phrases4}</TextMask>
+						</h1>
+					</div>
 				</div>
-				<motion.div
-					className="w-full flex items-center justify-between"
-					variants={heroVarients}
-					initial="initial"
-					whileInView="vissible">
-					<div className="">
-						<h1 className="text-[18rem] text-[#202020] tracking-wider">
-							Email: <br /> zainsoftwear11@gmail.com
-						</h1>
-					</div>
-					<div className="">
-						<h1 className="text-[18rem] text-[#202020] tracking-wider">
-							Passionate about crafting <br /> unforgettable experiences.
-						</h1>
-					</div>
-				</motion.div>
+				<div className="w-full h-[8vh]">
+					<motion.div
+						className="w-full flex items-center justify-between pb-[15rem]"
+						variants={heroVarients}
+						initial="initial"
+						whileInView="vissible">
+						<div className="">
+							<h1 className="text-[18rem] text-[#202020] tracking-wider">
+								Email: <br /> zainsoftwear11@gmail.com
+							</h1>
+						</div>
+						<div className="">
+							<h1 className="text-[18rem] text-[#202020] tracking-wider">
+								Passionate about crafting <br /> unforgettable experiences.
+							</h1>
+						</div>
+					</motion.div>
+				</div>
 			</div>
 		</section>
 	);

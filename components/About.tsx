@@ -5,7 +5,7 @@ export default function About() {
 	const phrases = ["About"];
 	return (
 		<section className="w-full  my-[100rem]">
-			<h1 className="text-[#202020] uppercase mb-[20rem] tracking-[5rem] text-[100rem] font-medium">
+			<h1 className="text-[#202020] uppercase tracking-[5rem] leading-none sm:text-[80rem] md:text-[100rem] text-[140rem] font-semibold">
 				<TextMask>{phrases}</TextMask>
 			</h1>
 			<div className="w-full">
