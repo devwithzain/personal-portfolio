@@ -9,7 +9,7 @@ export default function Hero() {
 	const phrases3 = ["next js"];
 	const phrases4 = [" developer"];
 	return (
-		<section className="w-full h-[100svh]">
+		<section className="w-full h-screen">
 			<Navbar />
 			<div className="w-full h-full flex flex-col justify-between items-center">
 				<div className="w-full h-[8vh]" />
