@@ -188,8 +188,9 @@ export const skillsData = [
     },
     {
         id: 14,
-        src: prisma
+        src: rhf
     },
+
     {
         id: 15,
         src: trpc
@@ -200,7 +201,7 @@ export const skillsData = [
     },
     {
         id: 17,
-        src: rhf
+        src: prisma
     },
     {
         id: 18,
