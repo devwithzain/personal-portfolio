@@ -11,25 +11,25 @@ export default function App() {
 	useEffect(() => {
 		const lenis = new Lenis();
 
-		function raf(time: any) {
+		function raf(time: number) {
 			lenis.raf(time);
 			requestAnimationFrame(raf);
 		}
 
 		requestAnimationFrame(raf);
 
-		(() => {
-			setTimeout(() => {
-				setIsLoading(false);
-				document.body.style.cursor = "default";
-				window.scrollTo(0, 0);
-			}, 3000);
-		})();
+		const timeout = setTimeout(() => {
+			setIsLoading(false);
+			document.body.style.cursor = "default";
+		}, 3000);
+
+		return () => clearTimeout(timeout);
 	}, []);
+
 	return (
 		<>
 			<AnimatePresence mode="wait">{isLoading && <PreLoad />}</AnimatePresence>
-			{isLoading === false ? <Home /> : ""}
+			{!isLoading && <Home />}
 		</>
 	);
 }
