@@ -2,14 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-	src: url("../font/PPNeueMontreal.woff");
+html {
+	font-size: 6.25%;
 	font-family: montreal;
+	background-color: #e1e1e1;
+	overflow-x: hidden;
 }
 
-html {
-	overflow: hidden;
-	font-size: 6.25%;
+body::-webkit-scrollbar {
+	width: 0;
 }
 
 @media (max-width: 1490px) {
@@ -17,6 +18,12 @@ html {
 		font-size: 5%;
 	}
 }
+
+@font-face {
+	src: url("../font/PPNeueMontreal.woff");
+	font-family: montreal;
+}
+
 @media (max-width: 1060px) {
 	html {
 		font-size: 4.5%;
