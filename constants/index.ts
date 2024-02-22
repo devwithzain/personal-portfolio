@@ -122,12 +122,12 @@ export const TfooterItem = [
     },
     {
         id: 4,
-        href: "https://www.linkedin.com/zainalisiddiqui",
+        href: "https://www.instagram.com/zainalisiddiqui11/",
         title: "Instagram"
     },
     {
         id: 5,
-        href: "https://www.linkedin.com/zainalisiddiqui",
+        href: "https://www.twitter.com/ZainAliSiddiqi/",
         title: "Twitter"
     },
 ];

@@ -1,6 +1,13 @@
+import { motion } from "framer-motion"
+import { navVarients } from "@motion";
+
 export default function Navbar() {
 	return (
-		<nav className="w-full h-[8vh] flex items-center px-[50rem] justify-between fixed backdrop-blur-[1.7rem] z-10 top-0 left-0">
+		<motion.nav
+			variants={navVarients}
+			initial="initial"
+			animate="vissible"
+			className="w-full h-[8vh] flex items-center px-[50rem] justify-between fixed backdrop-blur-[1.7rem] z-10 top-0 left-0">
 			<div className="w-[200rem]">
 				<div>
 					<h1 className="text-[18rem] tracking-wider text-[#202020] font-medium">
@@ -30,6 +37,6 @@ export default function Navbar() {
 					<h1 className="text-[15rem] text-[#202020] font-medium">Vol 01 </h1>
 				</div>
 			</div>
-		</nav>
+		</motion.nav>
 	);
 }

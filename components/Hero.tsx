@@ -29,24 +29,22 @@ export default function Hero() {
 						</h1>
 					</div>
 				</div>
-				<div className="w-full h-[8vh]">
-					<motion.div
-						className="w-full flex items-center justify-between pb-[15rem]"
-						variants={heroVarients}
-						initial="initial"
-						whileInView="vissible">
-						<div className="">
-							<h1 className="text-[18rem] text-[#202020] tracking-wider">
-								Email: <br /> zainsoftwear11@gmail.com
-							</h1>
-						</div>
-						<div className="">
-							<h1 className="text-[18rem] text-[#202020] tracking-wider">
-								Passionate about crafting <br /> unforgettable experiences.
-							</h1>
-						</div>
-					</motion.div>
-				</div>
+				<motion.div
+					className="w-full h-[8vh] flex items-center justify-between pb-[15rem]"
+					variants={heroVarients}
+					initial="initial"
+					animate="vissible">
+					<div className="">
+						<h1 className="text-[18rem] text-[#202020] tracking-wider">
+							Email: <br /> zainsoftwear11@gmail.com
+						</h1>
+					</div>
+					<div className="">
+						<h1 className="text-[18rem] text-[#202020] tracking-wider">
+							Passionate about crafting <br /> unforgettable experiences.
+						</h1>
+					</div>
+				</motion.div>
 			</div>
 		</section>
 	);
