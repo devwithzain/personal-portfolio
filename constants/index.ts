@@ -107,28 +107,18 @@ export const processItem = [
 export const TfooterItem = [
     {
         id: 1,
-        href: "https://www.linkedin.com/in/zainalisiddiqui/",
+        href: "https://www.linkedin.com/in/devwithzain/",
         title: "Linkedin"
     },
     {
         id: 2,
-        href: "https://github.com/ZainAliSiddiqui",
-        title: "Github"
-    },
-    {
-        id: 3,
         href: "",
         title: "©2024"
     },
     {
-        id: 4,
-        href: "https://www.instagram.com/zainalisiddiqui11/",
-        title: "Instagram"
-    },
-    {
-        id: 5,
-        href: "https://www.twitter.com/ZainAliSiddiqi/",
-        title: "Twitter"
+        id: 3,
+        href: "https://github.com/devwithzain",
+        title: "Github"
     },
 ];
 
