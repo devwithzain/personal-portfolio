@@ -14,7 +14,7 @@ export default function Home() {
 			<div className="sm:hidden">
 				<Project />
 			</div>
-			<div className="px-[50rem]">{<Process />}</div>
+			<Process />
 			<Parallax />
 			<Skills />
 			<div className="px-[50rem]">{<Footer />}</div>

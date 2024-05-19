@@ -7,7 +7,7 @@ export default function Hero() {
 	const phrases1 = ["Creative"];
 	const phrases2 = ["Designer &"];
 	const phrases3 = ["next js"];
-	const phrases4 = [" developer"];
+	const phrases4 = ["developer"];
 	return (
 		<section className="w-full h-screen">
 			<Navbar />
@@ -15,16 +15,16 @@ export default function Hero() {
 				<div className="w-full h-[8vh]" />
 				<div className="w-full h-auto flex flex-col items-center">
 					<div>
-						<h1 className="text-[#202020] uppercase tracking-[5rem] leading-none sm:text-[80rem] md:text-[100rem] text-[140rem] font-semibold">
+						<h1 className="text-[#202020] uppercase leading-none sm:text-[80rem] md:text-[100rem] text-[130rem] font-semibold">
 							<TextMask>{phrases1}</TextMask>
 						</h1>
-						<h1 className="text-[#202020] uppercase sm:ml-[0rem] md:ml-[250rem] ml-[500rem] tracking-[5rem] leading-none sm:text-[80rem] md:text-[100rem] text-[140rem] font-semibold">
+						<h1 className="text-[#202020] uppercase sm:ml-[0rem] md:ml-[250rem] ml-[500rem] leading-none sm:text-[80rem] md:text-[100rem] text-[130rem] font-semibold">
 							<TextMask>{phrases2}</TextMask>
 						</h1>
-						<h1 className="text-[#202020] uppercase sm:ml-[0rem] md:ml-[150rem] ml-[300rem] tracking-[5rem] leading-none sm:text-[80rem] md:text-[100rem] text-[140rem] font-semibold">
+						<h1 className="text-[#202020] uppercase sm:ml-[0rem] md:ml-[150rem] ml-[300rem] leading-none sm:text-[80rem] md:text-[100rem] text-[130rem] font-semibold">
 							<TextMask>{phrases3}</TextMask>
 						</h1>
-						<h1 className="text-[#202020] uppercase sm:ml-[0rem] md:ml-[350rem] ml-[700rem] tracking-[5rem] leading-none sm:text-[80rem] md:text-[100rem] text-[140rem] font-semibold">
+						<h1 className="text-[#202020] uppercase sm:ml-[0rem] md:ml-[350rem] ml-[700rem] leading-none sm:text-[80rem] md:text-[100rem] text-[130rem] font-semibold">
 							<TextMask>{phrases4}</TextMask>
 						</h1>
 					</div>
