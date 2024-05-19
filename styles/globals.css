@@ -13,15 +13,15 @@ body::-webkit-scrollbar {
 	width: 0;
 }
 
+@font-face {
+	src: url("../font/PPNeueMontreal.woff");
+	font-family: montreal;
+}
+
 @media (max-width: 1490px) {
 	html {
 		font-size: 5%;
 	}
-}
-
-@font-face {
-	src: url("../font/PPNeueMontreal.woff");
-	font-family: montreal;
 }
 
 @media (max-width: 1060px) {
