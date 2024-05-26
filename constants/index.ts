@@ -1,6 +1,13 @@
-import { chatgpt, code, css3, docker, figma, github, gpt3, hoobank, html, ipdc, js, lassles, metaverse, mongodb, next, nike, node, prisma, python, react_query, redux, rhf, tailwind, trpc, typescript, zod } from "@public";
+import { chatgpt, code, css3, docker, figma, github, gpt3, hoobank, html, ipdc, js, lassles, metaverse, mongodb, next, nike, node, ochi, prisma, python, react_query, redux, rhf, tailwind, trpc, typescript, zod } from "@public";
 
 export const project = [
+    {
+        title: "Ochi Website Clone",
+        img: ochi,
+        color: "#cdea68",
+        href: "https://ochi-website-clone.vercel.app/"
+
+    },
     {
         title: "Github Landing Page",
         img: github,
