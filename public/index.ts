@@ -26,3 +26,4 @@ export { default as carhub } from './carhub.png';
 export { default as hoobank } from './hoobank.png';
 export { default as gpt3 } from './gpt3.png';
 export { default as github } from './github.png';
+export { default as ochi } from './ochi.png';
