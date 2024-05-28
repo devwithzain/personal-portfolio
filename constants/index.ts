@@ -31,7 +31,7 @@ export const project = [
         title: "Metaverse",
         img: metaverse,
         color: "#1A232E",
-        href: "https://metaverse-zainali97.vercel.app/"
+        href: "https://metaverse-landings-page.vercel.app/"
     },
     {
         title: "HooBank",
