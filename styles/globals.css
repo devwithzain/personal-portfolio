@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+	cursor: none;
+}
+
 html {
 	font-size: 6.25%;
 	font-family: montreal;
