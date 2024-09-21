@@ -11,9 +11,7 @@ export default function Home() {
 				<Hero />
 				<About />
 			</div>
-			<div className="sm:hidden">
-				<Project />
-			</div>
+			<Project />
 			<Process />
 			<Parallax />
 			<Skills />

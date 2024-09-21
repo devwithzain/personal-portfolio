@@ -12,7 +12,7 @@ export default function Project() {
 				</h1>
 			</Marquee>
 			<div className="w-full bg-[url('/bglines.png')] bg-cover">
-				<div className="w-[80%] mx-auto">
+				<div className="w-[80%] mx-auto sm:w-full sm:px-[20px]">
 					<Hover />
 				</div>
 			</div>
