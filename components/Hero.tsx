@@ -1,50 +1,82 @@
-import Navbar from "./Navbar";
-import { TextMask } from "@animation";
-import { motion } from "framer-motion";
-import { heroVarients } from "@motion";
+"use client";
+import gsap from "gsap";
+import Image from "next/image";
+import { hero } from "@public";
+import { useEffect } from "react";
+import { Navbar } from "@/components";
 
 export default function Hero() {
-	const phrases1 = ["Creative"];
-	const phrases2 = ["Designer &"];
-	const phrases3 = ["next js"];
-	const phrases4 = ["developer"];
+	useEffect(() => {
+		const textWrapper = document.querySelector(".ml12");
+		if (textWrapper && textWrapper.textContent) {
+			textWrapper.innerHTML = textWrapper.textContent.replace(
+				/\S/g,
+				"<span class='letter'>$&</span>",
+			);
+		}
+
+		gsap.timeline().from(".ml12 .letter", {
+			opacity: 0,
+			stagger: {
+				amount: 0.5,
+				grid: "auto",
+				from: "random",
+			},
+			ease: "power2.out",
+		});
+
+		gsap.to("nav", {
+			top: 0,
+			ease: "power3.inOut",
+			duration: 1,
+		});
+
+		gsap.to(".hero-img", {
+			duration: 1,
+			ease: "power4.inOut",
+			clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+		});
+
+		gsap.to(".header .col p", {
+			left: 0,
+			opacity: 1,
+			duration: 1,
+			ease: "power2.inOut",
+		});
+	}, []);
 	return (
-		<section className="w-full h-screen">
+		<section className="w-full h-screen relative py-[20rem]">
 			<Navbar />
-			<div className="w-full h-full flex flex-col justify-between items-center">
-				<div className="w-full h-[8vh]" />
-				<div className="w-full h-auto flex flex-col items-center">
-					<div>
-						<h1 className="text-[#202020] uppercase leading-none sm:text-[80rem] md:text-[100rem] text-[130rem] font-semibold">
-							<TextMask>{phrases1}</TextMask>
+			<div className="w-full h-full flex items-end justify-end flex-col gap-[30rem]">
+				<div className="header w-full flex gap-[30rem] justify-between">
+					<div className="col flex-1">
+						<h1 className="ml12 text-[80rem] font-medium leading-none tracking-tighter uppercase inline-block">
+							The game web design <br /> deserves theg most.
 						</h1>
-						<h1 className="text-[#202020] uppercase sm:ml-[0rem] md:ml-[250rem] ml-[500rem] leading-none sm:text-[80rem] md:text-[100rem] text-[130rem] font-semibold">
-							<TextMask>{phrases2}</TextMask>
-						</h1>
-						<h1 className="text-[#202020] uppercase sm:ml-[0rem] md:ml-[150rem] ml-[300rem] leading-none sm:text-[80rem] md:text-[100rem] text-[130rem] font-semibold">
-							<TextMask>{phrases3}</TextMask>
-						</h1>
-						<h1 className="text-[#202020] uppercase sm:ml-[0rem] md:ml-[350rem] ml-[700rem] leading-none sm:text-[80rem] md:text-[100rem] text-[130rem] font-semibold">
-							<TextMask>{phrases4}</TextMask>
-						</h1>
+					</div>
+					<div className="col flex flex-1 flex-col gap-[10rem]">
+						<p className="relative opacity-0 text-[18rem] inline-block leading-normal tracking-wide">
+							As a creative web developer, I blend technical expertise with
+							innovative design to craft engaging digital experiences. With a
+							passion for problem-solving, I strive to build user-friendly
+							interfaces that not only look great but also function seamlessly.
+							My journey in web development has equipped me with a diverse skill
+							set, including proficiency in modern frameworks, responsive
+							design, and interactive animations.
+						</p>
+						<p className="relative opacity-0 text-[18rem] inline-block leading-normal tracking-wide">
+							Join me as I continue to explore the endless possibilities of the
+							web, turning ideas into reality through creativity and code.
+						</p>
 					</div>
 				</div>
-				<motion.div
-					className="w-full h-[8vh] flex items-center justify-between pb-[15rem]"
-					variants={heroVarients}
-					initial="initial"
-					animate="vissible">
-					<div className="">
-						<h1 className="text-[18rem] text-[#202020] tracking-wider">
-							Email: <br /> zainsoftwear11@gmail.com
-						</h1>
-					</div>
-					<div className="">
-						<h1 className="text-[18rem] text-[#202020] tracking-wider">
-							Passionate about crafting <br /> unforgettable experiences.
-						</h1>
-					</div>
-				</motion.div>
+				<div className="hero-img w-full h-1/2">
+					<Image
+						src={hero}
+						alt=""
+						className="w-full h-full object-cover"
+					/>
+				</div>
 			</div>
 		</section>
 	);

@@ -32,8 +32,8 @@ export const animation = {
 };
 
 export const navVarients = {
-    initial: { opacity: 0, y: "-100%" },
-    vissible: { opacity: 1, y: "0%", transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: 1 } },
+    initial: { opacity: 0, y: "-100%", transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1] } },
+    vissible: { opacity: 1, y: "0%", transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1] } },
 };
 
 export const heroVarients = {

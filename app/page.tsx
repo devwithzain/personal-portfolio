@@ -21,7 +21,7 @@ export default function App() {
 		const timeout = setTimeout(() => {
 			setIsLoading(false);
 			document.body.style.cursor = "default";
-		}, 3000);
+		}, 6500);
 
 		return () => clearTimeout(timeout);
 	}, []);

@@ -27,3 +27,7 @@ export { default as hoobank } from './hoobank.png';
 export { default as gpt3 } from './gpt3.png';
 export { default as github } from './github.png';
 export { default as ochi } from './ochi.png';
+export { default as frame } from "./frame.png";
+export { default as hero } from "./hero.jpg";
+export { default as logo } from "./logo.gif";
+export { default as menu } from "./menu.png";
