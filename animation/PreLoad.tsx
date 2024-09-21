@@ -1,73 +1,116 @@
 "use client";
-import { words } from "@constants";
-import { motion } from "framer-motion";
-import { opacity, slideUp } from "@motion";
-import { useEffect, useState } from "react";
+import gsap from "gsap";
+import Image from "next/image";
+import { frame } from "@/public";
+import { useEffect } from "react";
 
 export default function Loader() {
-	const [index, setIndex] = useState(0);
-	const [dimension, setDimension] = useState({ width: 0, height: 0 });
-
 	useEffect(() => {
-		setDimension({ width: window.innerWidth, height: window.innerHeight });
+		gsap.to(".bar", {
+			delay: 1,
+			clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+			duration: 1,
+			ease: "power4.inOut",
+			stagger: {
+				amount: 0.5,
+				from: "start",
+			},
+		});
+
+		gsap.to(".finder-container img", {
+			scale: 1,
+			delay: 2,
+		});
+
+		gsap.to(".finder-container img", {
+			scale: 0,
+			delay: 5,
+			duration: 0.5,
+			stagger: 0.075,
+		});
+
+		gsap.to(".bar", {
+			delay: 5,
+			clipPath: "polygon(100% 0%, 100% 0%, 100% 100%, 100% 100%)",
+			duration: 1,
+			ease: "power4.inOut",
+			stagger: {
+				amount: 0.5,
+				from: "end",
+			},
+		});
+
+		gsap.to(".marquee", {
+			delay: 0,
+			left: "0vw",
+			duration: 4,
+			ease: "power4.inOut",
+			onComplete: () => {
+				gsap.to(".marquee", {
+					opacity: 0,
+					repeat: 4,
+					yoyo: true,
+					duration: 0.1,
+					onComplete: () => {
+						gsap.to(".marquee", {
+							opacity: 1,
+						});
+					},
+				});
+			},
+		});
+
+		gsap.to(".marquee", {
+			delay: 4,
+			left: "-100vw",
+			duration: 4,
+			ease: "power4.inOut",
+		});
 	}, []);
 
-	useEffect(() => {
-		if (index == words.length - 1) return;
-		setTimeout(
-			() => {
-				setIndex(index + 1);
-			},
-			index == 0 ? 1000 : 150,
-		);
-	}, [index]);
-
-	const initialPath = `M0 0 L${dimension.width} 0 L${dimension.width} ${
-		dimension.height
-	} Q${dimension.width / 2} ${dimension.height + 300} 0 ${
-		dimension.height
-	}  L0 0`;
-	const targetPath = `M0 0 L${dimension.width} 0 L${dimension.width} ${
-		dimension.height
-	} Q${dimension.width / 2} ${dimension.height} 0 ${dimension.height}  L0 0`;
-
-	const curve = {
-		initial: {
-			d: initialPath,
-			transition: { duration: 0.7, ease: [0.76, 0, 0.24, 1] },
-		},
-		exit: {
-			d: targetPath,
-			transition: { duration: 0.7, ease: [0.76, 0, 0.24, 1], delay: 0.3 },
-		},
-	};
-
 	return (
-		<motion.div
-			variants={slideUp}
-			initial="initial"
-			exit="exit"
-			className="h-screen w-screen flex items-center justify-center fixed z-20 bg-[#202020] ">
-			{dimension.width > 0 && (
-				<>
-					<motion.p
-						className="flex text-white text-[42rem] items-center absolute z-10"
-						variants={opacity}
-						initial="initial"
-						animate="enter">
-						<span className="block w-[10px] h-[10px] bg-white rounded-full mr-[10px]" />
-						{words[index]}
-					</motion.p>
-					<svg className="absolute top-0 w-full h-calc-100">
-						<motion.path
-							className="fill-[#202020]"
-							variants={curve}
-							initial="initial"
-							exit="exit"
-						/>
-					</svg>
-				</>
-			)}
-		</motion.div>
+		<div className="fixed w-full h-full flex flex-col top-0 left-0 z-50">
+			<div className="finder-container w-[80%] h-[500rem] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
+				{[frame, frame, frame, frame, frame].map((frame, index) => (
+					<Image
+						key={index}
+						src={frame}
+						alt="frame"
+						className="w-full h-full object-cover absolute scale-0"
+					/>
+				))}
+			</div>
+			<div className="bar flex-1 w-full bg-[#d3d3d3] py-[24rem] mt-[-1rem]">
+				<div className="marquee relative left-[100vw] w-[300vw] flex gap-[40rem] text-[18rem] uppercase">
+					{Array(20)
+						.fill("Zain Ali")
+						.map((text, index) => (
+							<p
+								key={index}
+								className="flex items-center gap-[10rem] text-[18rem] font-medium whitespace-nowrap">
+								<span className="relative pr-[4rem] text-[36rem]">■</span>
+								{text}
+							</p>
+						))}
+				</div>
+			</div>
+			<div className="bar flex-1 w-full bg-[#d3d3d3] py-[24rem] mt-[-1rem]" />
+			<div className="bar flex-1 w-full bg-[#d3d3d3] py-[24rem] mt-[-1rem]" />
+			<div className="bar flex-1 w-full bg-[#d3d3d3] py-[24rem] mt-[-1rem]" />
+			<div className="bar flex-1 w-full bg-[#d3d3d3] py-[24rem] mt-[-1rem] flex flex-col justify-end">
+				<div className="marquee relative left-[100vw] w-[300vw] flex gap-[40rem] text-[18rem] uppercase">
+					{Array(20)
+						.fill("Zain Ali")
+						.map((text, index) => (
+							<p
+								key={index}
+								className="flex items-center gap-[10rem] text-[18rem] font-medium whitespace-nowrap">
+								<span className="relative pr-[4rem] text-[36rem]">■</span>
+								{text}
+							</p>
+						))}
+				</div>
+			</div>
+		</div>
 	);
 }
