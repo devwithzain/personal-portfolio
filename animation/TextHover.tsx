@@ -15,7 +15,7 @@ export default function TextHover({
 							{titile1}
 						</div>
 					</h1>
-					<h1 className="text-[40rem] relative flex gap-x-[7px] transition-all ease-in-out duration-500">
+					<h1 className="text-[40rem] relative flex gap-x-[7rem] transition-all ease-in-out duration-500">
 						<div className="translate-y-[0%] group-hover:translate-y-[110%] transition-all ease-in-out duration-500">
 							{titile1}
 						</div>
@@ -23,7 +23,7 @@ export default function TextHover({
 							{subTitle1}
 						</div>
 					</h1>
-					<h1 className="flex gap-x-[7px] text-[40rem] absolute translate-y-[100%] group-hover:translate-y-[-100%] right-0 transition-all ease-in-out duration-500">
+					<h1 className="flex gap-x-[7rem] text-[40rem] absolute translate-y-[100%] group-hover:translate-y-[-100%] right-0 transition-all ease-in-out duration-500">
 						<div className="translate-y-[100%] group-hover:translate-y-[0%] transition-all ease-in-out duration-500">
 							{subTitle1}
 						</div>
@@ -37,7 +37,7 @@ export default function TextHover({
 							{titile2}
 						</div>
 					</h1>
-					<h1 className="text-[40rem] relative flex gap-x-[7px] transition-all ease-in-out duration-500">
+					<h1 className="text-[40rem] relative flex gap-x-[7rem] transition-all ease-in-out duration-500">
 						<div className="translate-y-[0%] group-hover:translate-y-[110%] transition-all ease-in-out duration-500">
 							{titile2}
 						</div>
@@ -45,7 +45,7 @@ export default function TextHover({
 							{subTitle2}
 						</div>
 					</h1>
-					<h1 className="flex gap-x-[7px] text-[40rem] absolute translate-y-[100%] group-hover:translate-y-[-100%] right-0 transition-all ease-in-out duration-500">
+					<h1 className="flex gap-x-[7rem] text-[40rem] absolute translate-y-[100%] group-hover:translate-y-[-100%] right-0 transition-all ease-in-out duration-500">
 						<div className="translate-y-[100%] group-hover:translate-y-[0%] transition-all ease-in-out duration-500">
 							{subTitle2}
 						</div>

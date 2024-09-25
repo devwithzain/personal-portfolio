@@ -1,7 +1,8 @@
-import { motion } from "framer-motion";
-import { navVarients } from "@motion";
 import Image from "next/image";
-import { logo, menu } from "@public";
+import { logo } from "@public";
+import { Menu } from "@components";
+import { navVarients } from "@motion";
+import { motion } from "framer-motion";
 
 export default function Navbar() {
 	return (
@@ -15,7 +16,7 @@ export default function Navbar() {
 					<Image
 						src={logo}
 						alt=""
-						className="w-[40px] h-[40px] object-cover"
+						className="w-[40rem] h-[40rem] object-cover"
 					/>
 				</div>
 			</div>
@@ -24,14 +25,8 @@ export default function Navbar() {
 					Zain
 				</h1>
 			</div>
-			<div className="w-[200rem] flex justify-end items-end">
-				<div>
-					<Image
-						src={menu}
-						alt=""
-						className="w-[40px] h-[40px] object-cover"
-					/>
-				</div>
+			<div className="w-[200rem] flex items-center justify-center">
+				<Menu />
 			</div>
 		</motion.nav>
 	);

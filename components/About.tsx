@@ -1,5 +1,5 @@
-import { TextMask, Word } from "@animation";
 import { paragraph } from "@constants";
+import { TextMask, Word } from "@animation";
 
 export default function About() {
 	const phrases = ["About"];

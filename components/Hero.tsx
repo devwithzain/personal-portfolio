@@ -47,11 +47,11 @@ export default function Hero() {
 	return (
 		<section className="w-full h-screen relative py-[20rem]">
 			<Navbar />
-			<div className="w-full h-full flex items-end justify-end flex-col gap-[30rem]">
+			<div className="w-full h-full flex flex-col gap-[30rem] pt-[8vh] overflow-hidden">
 				<div className="header w-full flex gap-[30rem] justify-between">
 					<div className="col flex-1">
 						<h1 className="ml12 text-[80rem] font-medium leading-none tracking-tighter uppercase inline-block">
-							The game web design <br /> deserves theg most.
+							The game web design <br /> deserves the most.
 						</h1>
 					</div>
 					<div className="col flex flex-1 flex-col gap-[10rem]">
@@ -70,10 +70,10 @@ export default function Hero() {
 						</p>
 					</div>
 				</div>
-				<div className="hero-img w-full h-1/2">
+				<div className="hero-img w-full">
 					<Image
 						src={hero}
-						alt=""
+						alt="heroImg"
 						className="w-full h-full object-cover"
 					/>
 				</div>
