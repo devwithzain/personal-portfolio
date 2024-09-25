@@ -50,3 +50,16 @@ export type TparallaxProps = {
     images: string[];
     y: MotionValue<number>;
 };
+
+export type TbuttonProps = {
+    toggleMenu: () => void,
+    isActive: boolean;
+};
+
+export type TnavProps = {
+    toggleMenu: () => void,
+};
+
+export type TperspectiveTextMenuProps = {
+    label: string;
+};

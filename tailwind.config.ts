@@ -18,10 +18,12 @@ const config: Config = {
       },
     },
     screens: {
-      sm: { max: "768px" },
-      md: { min: "768px", max: "1024px" },
-      lg: '1024px',
-    },
+      xm: { max: "400px" },
+      sm: { min: "401px", max: "768px" },
+      md: { min: "769px", max: "1024px" },
+      lg: { min: "1025px", max: "1490px" },
+      xl: { min: "1491px" },
+    }
   },
   plugins: [],
 };

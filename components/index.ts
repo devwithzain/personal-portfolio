@@ -6,3 +6,4 @@ export { default as Project } from './Project';
 export { default as Process } from './Process';
 export { default as Footer } from './Footer';
 export { default as Skills } from './Skills';
+export { default as Menu } from './Side-Menu/SideHome';

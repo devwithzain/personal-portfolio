@@ -22,34 +22,26 @@ body::-webkit-scrollbar {
 	font-family: montreal;
 }
 
-@media (max-width: 1490px) {
-	html {
-		font-size: 5%;
+@utilities {
+	.padding-x {
+		@apply px-[rem] lg:px-[rem] md:px-[rem] sm:px-[rem] xm:px-[rem];
+	}
+	.padding-y {
+		@apply py-[rem] lg:py-[rem] md:py-[rem] sm:py-[rem] xm:py-[rem];
+	}
+	.heading {
+		@apply text-[rem] lg:text-[rem] md:text-[rem] sm:text-[rem] xm:text-[rem];
+	}
+	.subHeading {
+		@apply text-[rem] lg:text-[rem] md:text-[rem] sm:text-[rem] xm:text-[rem];
+	}
+	.paragraph {
+		@apply text-[rem] lg:text-[rem] md:text-[rem] sm:text-[rem] xm:text-[rem];
+	}
+	.subParagraph {
+		@apply text-[rem] lg:text-[rem] md:text-[rem] sm:text-[rem] xm:text-[rem];
 	}
 }
-
-@media (max-width: 1060px) {
-	html {
-		font-size: 4.5%;
-	}
-}
-@media (max-width: 768px) {
-	html {
-		font-size: 3.5%;
-	}
-}
-
-@media (max-width: 400px) {
-	html {
-		font-size: 3%;
-	}
-}
-@media (max-width: 200px) {
-	html {
-		font-size: 2.5%;
-	}
-}
-
 .slider {
 	position: relative;
 	width: 100%;
@@ -93,7 +85,7 @@ body::-webkit-scrollbar {
 .perspectiveText p:nth-of-type(2) {
 	position: absolute;
 	transform-origin: bottom center;
-	transform: rotateX(-90deg) translateY(12px);
+	transform: rotateX(-90deg) translateY(12rem);
 	opacity: 0;
 }
 
@@ -103,4 +95,77 @@ body::-webkit-scrollbar {
 
 .bar {
 	clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+}
+
+.button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100rem;
+	height: 40rem;
+	cursor: pointer;
+	border-radius: 25rem;
+	overflow: hidden;
+}
+
+.button .slider {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.button .slider .el {
+	width: 100%;
+	height: 100%;
+	background-color: #000000;
+}
+
+.button .slider .el p {
+	margin: 0rem;
+}
+
+.button .slider .el:nth-of-type(2) {
+	background-color: black;
+}
+
+.button .slider .el:nth-of-type(2) p {
+	color: #ffffff;
+}
+
+.button .slider .el:hover .perspectiveText {
+	transform: rotateX(90deg);
+}
+
+.button .slider .el:hover .perspectiveText p:nth-of-type(1) {
+	transform: translateY(-100%);
+	opacity: 0;
+}
+
+.button .slider .el:hover .perspectiveText p:nth-of-type(2) {
+	opacity: 1;
+}
+
+.perspectiveText {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	transform-style: preserve-3d;
+	transition: transform 0.75s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.perspectiveText p {
+	transition: all 0.75s cubic-bezier(0.76, 0, 0.24, 1);
+	pointer-events: none;
+	text-transform: uppercase;
+	font-size: 16rem;
+}
+
+.perspectiveText p:nth-of-type(2) {
+	position: absolute;
+	transform-origin: bottom center;
+	transform: rotateX(-90deg) translateY(9rem);
+	opacity: 0;
 }
