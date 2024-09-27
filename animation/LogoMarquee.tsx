@@ -44,9 +44,9 @@ export default function LogoMarquee({
 	});
 
 	return (
-		<div className="overflow-hidden flex whitespace-nowrap flex-wrap">
+		<div className="overflow-hidden flex flex-wrap">
 			<motion.div
-				className="flex whitespace-nowrap flex-nowrap"
+				className="flex flex-nowrap"
 				style={{ x }}>
 				<span>{children} </span>
 				<span>{children} </span>

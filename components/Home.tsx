@@ -1,5 +1,13 @@
 import { Parallax, Sticky } from "@animation";
-import { About, Footer, Hero, Process, Project, Skills } from "@components";
+import {
+	About,
+	Footer,
+	Hero,
+	Process,
+	Project,
+	Skill,
+	Testimonials,
+} from "@components";
 
 export default function Home() {
 	return (
@@ -14,7 +22,8 @@ export default function Home() {
 			<Project />
 			<Process />
 			<Parallax />
-			<Skills />
+			<Skill />
+			<Testimonials />
 			<div className="px-[50rem]">{<Footer />}</div>
 		</>
 	);

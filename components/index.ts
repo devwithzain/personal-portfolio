@@ -5,5 +5,6 @@ export { default as Hero } from './Hero';
 export { default as Project } from './Project';
 export { default as Process } from './Process';
 export { default as Footer } from './Footer';
-export { default as Skills } from './Skills';
+export { default as Skill } from './skill';
+export { default as Testimonials } from './Testimonials';
 export { default as Menu } from './Side-Menu/SideHome';

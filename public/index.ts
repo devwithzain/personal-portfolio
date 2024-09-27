@@ -31,3 +31,13 @@ export { default as frame } from "./frame.png";
 export { default as hero } from "./hero.webp";
 export { default as logo } from "./logo.gif";
 export { default as menu } from "./menu.png";
+
+export { default as avatar1 } from "./avatar-1.png";
+export { default as avatar2 } from "./avatar-2.png";
+export { default as avatar3 } from "./avatar-3.png";
+export { default as avatar4 } from "./avatar-4.png";
+export { default as avatar5 } from "./avatar-5.png";
+export { default as avatar6 } from "./avatar-6.png";
+export { default as avatar7 } from "./avatar-7.png";
+export { default as avatar8 } from "./avatar-8.png";
+export { default as avatar9 } from "./avatar-9.png";
