@@ -80,7 +80,7 @@ export default function Loader() {
 					/>
 				))}
 			</div>
-			<div className="bar flex-1 w-full bg-[#d3d3d3] py-[24rem] mt-[-1rem]">
+			<div className="bar flex-1 w-full bg-[#d6d5d5] py-[24rem] mt-[-1rem]">
 				<div className="marquee relative left-[100vw] w-[300vw] flex gap-[40rem] text-[18rem] uppercase">
 					{Array(20)
 						.fill("Zain Ali")
@@ -94,10 +94,10 @@ export default function Loader() {
 						))}
 				</div>
 			</div>
-			<div className="bar flex-1 w-full bg-[#d3d3d3] py-[24rem] mt-[-1rem]" />
-			<div className="bar flex-1 w-full bg-[#d3d3d3] py-[24rem] mt-[-1rem]" />
-			<div className="bar flex-1 w-full bg-[#d3d3d3] py-[24rem] mt-[-1rem]" />
-			<div className="bar flex-1 w-full bg-[#d3d3d3] py-[24rem] mt-[-1rem] flex flex-col justify-end">
+			<div className="bar flex-1 w-full bg-[#d6d5d5] py-[24rem] mt-[-1rem]" />
+			<div className="bar flex-1 w-full bg-[#d6d5d5] py-[24rem] mt-[-1rem]" />
+			<div className="bar flex-1 w-full bg-[#d6d5d5] py-[24rem] mt-[-1rem]" />
+			<div className="bar flex-1 w-full bg-[#d6d5d5] py-[24rem] mt-[-1rem] flex flex-col justify-end">
 				<div className="marquee relative left-[100vw] w-[300vw] flex gap-[40rem] text-[18rem] uppercase">
 					{Array(20)
 						.fill("Zain Ali")

@@ -2,11 +2,11 @@
 import gsap from "gsap";
 import Image from "next/image";
 import { hero } from "@public";
-import { useEffect } from "react";
 import { Navbar } from "@/components";
+import { useLayoutEffect } from "react";
 
 export default function Hero() {
-	useEffect(() => {
+	useLayoutEffect(() => {
 		const textWrapper = document.querySelector(".ml12");
 		if (textWrapper && textWrapper.textContent) {
 			textWrapper.innerHTML = textWrapper.textContent.replace(
@@ -22,6 +22,8 @@ export default function Hero() {
 				grid: "auto",
 				from: "random",
 			},
+			delay: 0.5,
+			duration: 1,
 			ease: "power2.out",
 		});
 
@@ -29,10 +31,12 @@ export default function Hero() {
 			top: 0,
 			ease: "power3.inOut",
 			duration: 1,
+			delay: 0.5,
 		});
 
 		gsap.to(".hero-img", {
 			duration: 1,
+			delay: 0.5,
 			ease: "power4.inOut",
 			clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
 		});
@@ -41,6 +45,7 @@ export default function Hero() {
 			left: 0,
 			opacity: 1,
 			duration: 1,
+			delay: 0.5,
 			ease: "power2.inOut",
 		});
 	}, []);
@@ -50,7 +55,7 @@ export default function Hero() {
 			<div className="w-full h-full flex flex-col gap-[30rem] pt-[8vh] overflow-hidden">
 				<div className="header w-full flex gap-[30rem] justify-between">
 					<div className="col flex-1">
-						<h1 className="ml12 text-[80rem] font-medium leading-none tracking-tighter uppercase inline-block">
+						<h1 className="ml12 text-[80rem] font-medium leading-none tracking-tighter uppercase">
 							The game web design <br /> deserves the most.
 						</h1>
 					</div>

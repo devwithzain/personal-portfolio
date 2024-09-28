@@ -12,8 +12,8 @@ export default function Testimonials() {
 							<div
 								className="flex flex-col gap-[20rem]"
 								key={item.id}>
-								<div className="min-w-[400rem] min-h-[250rem] py-[20rem] px-[40rem] shadow border border-[#222222]/10 rounded-[30rem] bg-white flex flex-col gap-[20rem] justify-between">
-									<p className="text-[#010D3E] font-dmSans text-[20rem] font-normal leading-tight">
+								<div className="min-w-[400rem] min-h-[250rem] py-[20rem] px-[40rem] border border-[#222222]/10 rounded-[30rem] bg-[#d6d5d5] flex flex-col gap-[20rem] justify-between">
+									<p className="text-black text-[20rem] font-normal leading-tight">
 										{item.text}
 									</p>
 									<div className="flex items-center gap-[20rem]">
@@ -24,10 +24,10 @@ export default function Testimonials() {
 											height={50}
 										/>
 										<div className="flex flex-col">
-											<h1 className="text-[#010D3E] font-dmSans text-[16rem] font-normal leading-tight">
+											<h1 className="text-black text-[16rem] font-normal leading-tight">
 												{item.name}
 											</h1>
-											<p className="text-[#010D3E] font-dmSans text-[16rem] font-normal leading-tight">
+											<p className="text-black text-[16rem] font-normal leading-tight">
 												{item.username}
 											</p>
 										</div>
@@ -43,8 +43,8 @@ export default function Testimonials() {
 							<div
 								className="flex flex-col gap-[20rem]"
 								key={item.id}>
-								<div className="min-w-[400rem] min-h-[250rem] py-[20rem] px-[40rem] shadow border border-[#222222]/10 rounded-[30rem] bg-white flex flex-col gap-[20rem] justify-between">
-									<p className="text-[#010D3E] font-dmSans text-[20rem] font-normal leading-tight">
+								<div className="min-w-[400rem] min-h-[250rem] py-[20rem] px-[40rem] order border-[#222222]/10 rounded-[30rem] bg-[#d6d5d5] flex flex-col gap-[20rem] justify-between">
+									<p className="text-black text-[20rem] font-normal leading-tight">
 										{item.text}
 									</p>
 									<div className="flex items-center gap-[20rem]">
@@ -55,10 +55,10 @@ export default function Testimonials() {
 											height={50}
 										/>
 										<div className="flex flex-col">
-											<h1 className="text-[#010D3E] font-dmSans text-[16rem] font-normal leading-tight">
+											<h1 className="text-black text-[16rem] font-normal leading-tight">
 												{item.name}
 											</h1>
-											<p className="text-[#010D3E] font-dmSans text-[16rem] font-normal leading-tight">
+											<p className="text-black text-[16rem] font-normal leading-tight">
 												{item.username}
 											</p>
 										</div>
@@ -74,8 +74,8 @@ export default function Testimonials() {
 							<div
 								className="flex flex-col gap-[20rem]"
 								key={item.id}>
-								<div className="min-w-[400rem] min-h-[250rem] py-[20rem] px-[40rem] shadow border border-[#222222]/10 rounded-[30rem] bg-white flex flex-col gap-[20rem] justify-between">
-									<p className="text-[#010D3E] font-dmSans text-[20rem] font-normal leading-tight">
+								<div className="min-w-[400rem] min-h-[250rem] py-[20rem] px-[40rem] order border-[#222222]/10 rounded-[30rem] bg-[#d6d5d5] flex flex-col gap-[20rem] justify-between">
+									<p className="text-black text-[20rem] font-normal leading-tight">
 										{item.text}
 									</p>
 									<div className="flex items-center gap-[20rem]">
@@ -86,10 +86,10 @@ export default function Testimonials() {
 											height={50}
 										/>
 										<div className="flex flex-col">
-											<h1 className="text-[#010D3E] font-dmSans text-[16rem] font-normal leading-tight">
+											<h1 className="text-black text-[16rem] font-normal leading-tight">
 												{item.name}
 											</h1>
-											<p className="text-[#010D3E] font-dmSans text-[16rem] font-normal leading-tight">
+											<p className="text-black text-[16rem] font-normal leading-tight">
 												{item.username}
 											</p>
 										</div>

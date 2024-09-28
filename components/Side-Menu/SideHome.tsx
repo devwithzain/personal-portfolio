@@ -11,7 +11,7 @@ export default function SideHome() {
 	return (
 		<div className="fixed right-[50rem] top-[20rem]">
 			<motion.div
-				className="bg-[#BFBABA] rounded-[25rem] relative"
+				className="bg-[#d6d5d5] rounded-[25rem] relative"
 				variants={menu}
 				animate={isActive ? "open" : "closed"}
 				initial="closed">
