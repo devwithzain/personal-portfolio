@@ -1,51 +1,83 @@
+import {
+    SiBun,
+    SiNextdotjs,
+    SiPrisma,
+    SiReacthookform,
+    SiRedux,
+    SiTrpc,
+    SiTypescript,
+    SiZod,
+} from "react-icons/si";
+import { useAnimate } from "framer-motion";
+import { IconType } from "react-icons";
+import {
+    FaCss3Alt,
+    FaDocker,
+    FaHtml5,
+    FaNodeJs,
+    FaPython,
+} from "react-icons/fa";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { FaReact, FaFigma } from "react-icons/fa6";
+import { DiMongodb } from "react-icons/di";
+import { BiLogoPostgresql } from "react-icons/bi";
+
 import { avatar1, avatar2, avatar3, avatar4, avatar5, avatar6, avatar7, avatar8, avatar9, chatgpt, code, css3, docker, figma, github, gpt3, hoobank, html, ipdc, js, lassles, metaverse, mongodb, next, nike, node, ochi, prisma, python, react_query, redux, rhf, tailwind, trpc, typescript, zod } from "@public";
 
 export const project = [
     {
-        title: "Ochi Website Clone",
+        id: 1,
+        title: "Ochi",
         img: ochi,
         color: "#cdea68",
         href: "https://ochi-website-clone.vercel.app/"
 
     },
     {
-        title: "Github Landing Page",
+        id: 2,
+        title: "Github",
         img: github,
         color: "#0C1015",
         href: "https://github-landing-page-nu.vercel.app/"
 
     },
     {
-        title: "IPDC Finance",
+        id: 3,
+        title: "IPDC",
         img: ipdc,
         color: "#FFEAF5",
         href: "https://infd-finance-landing-page.vercel.app/"
     },
     {
-        title: "Nike Landing Page",
+        id: 4,
+        title: "Nike",
         img: nike,
         color: "#ECEEFF",
         href: "https://nike-woad-one.vercel.app/"
     },
     {
+        id: 5,
         title: "Metaverse",
         img: metaverse,
         color: "#1A232E",
         href: "https://metaverse-landings-page.vercel.app/"
     },
     {
+        id: 6,
         title: "HooBank",
         img: hoobank,
         color: "#172235",
         href: "https://hoobank-app-pi.vercel.app/"
     },
     {
-        title: "Lasless VPN",
+        id: 7,
+        title: "Lasless",
         img: lassles,
         color: "#FFECEC",
         href: "https://lasles-vpn-tau.vercel.app/"
     },
     {
+        id: 8,
         title: "GPT-3",
         img: gpt3,
         color: "#012043",
@@ -313,5 +345,113 @@ export const testimonials = [
         src: avatar8,
         name: "Sam Dawson",
         username: "@dawsontechtips",
+    },
+];
+
+export const iconGroups = [
+    {
+        id: 1,
+        row1: [
+            {
+                id: 1,
+                Icon: FaHtml5
+            },
+            {
+                id: 2,
+                Icon: FaCss3Alt
+            }
+        ],
+    },
+    {
+        id: 2,
+        row2: [
+            {
+                id: 1,
+                Icon: RiTailwindCssFill
+            },
+            {
+                id: 2,
+                Icon: FaFigma
+            },
+            {
+                id: 3,
+                Icon: SiTypescript
+            },
+            {
+                id: 4,
+                Icon: SiNextdotjs
+            }
+        ],
+    },
+    {
+        id: 3,
+        row3: [
+            {
+                id: 1,
+                Icon: SiZod
+            },
+            {
+                id: 2,
+                Icon: FaReact
+            },
+            {
+                id: 3,
+                Icon: SiReacthookform
+            }
+        ],
+    },
+];
+
+export const backEndItems = [
+    {
+        id: 1,
+        row1: [
+            {
+                id: 1,
+                Icon: FaDocker
+            },
+            {
+                id: 2,
+                Icon: FaPython
+            },
+            {
+                id: 3,
+                Icon: SiBun
+            },
+        ],
+    },
+    {
+        id: 2,
+        row2: [
+            {
+                id: 1,
+                Icon: SiTrpc
+            },
+            {
+                id: 2,
+                Icon: SiPrisma
+            },
+            {
+                id: 3,
+                Icon: SiRedux
+            },
+            {
+                id: 4,
+                Icon: BiLogoPostgresql
+            }
+        ],
+    },
+    {
+        id: 3,
+        row3: [
+            {
+                id: 1,
+                Icon: DiMongodb
+            },
+            {
+                id: 2,
+                Icon: FaNodeJs
+            },
+        ],
     },
 ];

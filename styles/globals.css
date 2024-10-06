@@ -22,9 +22,9 @@ body::-webkit-scrollbar {
 	font-family: montreal;
 }
 
-@utilities {
+@layer utilities {
 	.padding-x {
-		@apply px-[rem] lg:px-[rem] md:px-[rem] sm:px-[rem] xm:px-[rem];
+		@apply px-[50rem] lg:px-[40rem] md:px-[30rem] sm:px-[20rem] xm:px-[20rem];
 	}
 	.padding-y {
 		@apply py-[rem] lg:py-[rem] md:py-[rem] sm:py-[rem] xm:py-[rem];
