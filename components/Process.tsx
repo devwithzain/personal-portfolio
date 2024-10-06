@@ -1,15 +1,13 @@
 "use client";
 import { useState } from "react";
+import { TextHover } from "@animation";
 import { processItem } from "@constants";
-import { TextHover, TextMask } from "@animation";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function Process() {
 	const [activeAccordion, setActiveAccordion] = useState<string | null>(
 		processItem[0]?.id || null,
 	);
-
-	const phrases = ["Process"];
 
 	const toggleAccordion = (itemId: string) => {
 		if (activeAccordion === itemId) {
@@ -21,13 +19,24 @@ export default function Process() {
 
 	return (
 		<section className="w-full my-[100rem]">
-			<div className="flex sm:flex-col lg:items-center gap-x-[100rem] border-b border-[#8D8D8D] px-[50rem]">
-				<h1 className="text-[#202020] uppercase leading-none sm:text-[80rem] md:text-[100rem] text-[130rem] font-semibold">
-					<TextMask>{phrases}</TextMask>
+			<div className="flex sm:flex-col lg:items-center gap-x-[20rem] border-b border-[#8D8D8D] px-[50rem]">
+				<h1 className="text-[#202020] uppercase leading-none sm:text-[80rem] md:text-[100rem] text-[130rem] font-semibold overflow-hidden">
+					{"process".split("").map((item: string, i: number) => (
+						<motion.span
+							initial={{ y: "100%" }}
+							whileInView={{ y: 0 }}
+							viewport={{ once: true }}
+							transition={{
+								delay: i * 0.1,
+								duration: 0.5,
+								ease: [0.4, 0, 0.2, 1],
+							}}
+							className="inline-block"
+							key={i}>
+							{item}
+						</motion.span>
+					))}
 				</h1>
-				<p className="text-[30rem] text-[#202020] lg:mt-[30rem] sm:mb-[30rem] lg:ml-[40rem]">
-					Things I can help you with:
-				</p>
 			</div>
 			<div className="w-full items-end flex py-[50rem] flex-col px-[50rem]">
 				{processItem.map((item) => (

@@ -10,7 +10,7 @@ export default function Navbar() {
 			variants={navVarients}
 			initial="initial"
 			animate="vissible"
-			className="w-full h-[8vh] flex items-center px-[50rem] justify-between fixed backdrop-blur-[1.7rem] z-10 top-0 left-0">
+			className="w-full h-[8vh] flex items-center px-[50rem] justify-between fixed backdrop-blur-[1.7rem] z-[99] top-0 left-0">
 			<div className="w-[200rem]">
 				<div>
 					<Image

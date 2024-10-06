@@ -6,7 +6,7 @@ import { LinkHover, TextMask } from "@animation";
 export default function Footer() {
 	const phrases = ["HAVE AN IDEA?"];
 	return (
-		<section className="w-full h-screen">
+		<section className="w-full h-screen bg-[#e1e1e1] relative z-[70]">
 			<div className="flex items-center justify-between flex-col h-full">
 				<div className="w-full h-[8vh] " />
 				<div className="flex items-center justify-center flex-col gap-y-[10rem] w-full h-auto ">

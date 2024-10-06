@@ -3,9 +3,16 @@ import gsap from "gsap";
 import Image from "next/image";
 import { hero } from "@public";
 import { Navbar } from "@/components";
+import { TextMask } from "@animation";
 import { useLayoutEffect } from "react";
 
 export default function Hero() {
+	const phares1 = [
+		"As a creative web developer, I blend technical expertise with innovative design to craft engaging digital experiences. With a passion for problem-solving, I strive to build user-friendly interfaces that not only look great but also function seamlessly.",
+	];
+	const phares2 = [
+		"My journey in web development has equipped me with a diverse skill set, including proficiency in modern frameworks, responsive design, and interactive animations. Join me as I continue to explore the endless possibilities of the web, turning ideas into reality through creativity and code.",
+	];
 	useLayoutEffect(() => {
 		const textWrapper = document.querySelector(".ml12");
 		if (textWrapper && textWrapper.textContent) {
@@ -61,17 +68,10 @@ export default function Hero() {
 					</div>
 					<div className="col flex flex-1 flex-col gap-[10rem]">
 						<p className="relative opacity-0 text-[18rem] inline-block leading-normal tracking-wide">
-							As a creative web developer, I blend technical expertise with
-							innovative design to craft engaging digital experiences. With a
-							passion for problem-solving, I strive to build user-friendly
-							interfaces that not only look great but also function seamlessly.
-							My journey in web development has equipped me with a diverse skill
-							set, including proficiency in modern frameworks, responsive
-							design, and interactive animations.
+							<TextMask>{phares1}</TextMask>
 						</p>
 						<p className="relative opacity-0 text-[18rem] inline-block leading-normal tracking-wide">
-							Join me as I continue to explore the endless possibilities of the
-							web, turning ideas into reality through creativity and code.
+							<TextMask>{phares2}</TextMask>
 						</p>
 					</div>
 				</div>

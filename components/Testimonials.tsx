@@ -4,10 +4,10 @@ import { testimonials } from "@constants";
 
 export default function Testimonials() {
 	return (
-		<section className="my-[150rem]">
-			<div className="w-full flex flex-col gap-[10rem]">
+		<section className="pt-[80rem] bg-[#e1e1e1] relative z-[60]">
+			<div className="w-full flex flex-col gap-[10rem] bg-[#e1e1e1] relative z-[60]">
 				<Marquee baseVelocity={-0.1}>
-					<div className="flex m-0 gap-x-[20rem] items-center mr-[20rem]">
+					<div className="flex m-0 gap-x-[20rem] items-center mr-[20rem] bg-[#e1e1e1] relative z-[60]">
 						{[...testimonials, ...testimonials, ...testimonials].map((item) => (
 							<div
 								className="flex flex-col gap-[20rem]"
@@ -35,10 +35,11 @@ export default function Testimonials() {
 								</div>
 							</div>
 						))}
-					</div>
+					</div>{" "}
+					bg-[#e1e1e1] relative z-[60]
 				</Marquee>
 				<Marquee baseVelocity={0.1}>
-					<div className="flex m-0 gap-x-[20rem] items-center mr-[20rem]">
+					<div className="flex m-0 gap-x-[20rem] items-center mr-[20rem] bg-[#e1e1e1] relative z-[60]">
 						{[...testimonials, ...testimonials, ...testimonials].map((item) => (
 							<div
 								className="flex flex-col gap-[20rem]"
@@ -66,10 +67,11 @@ export default function Testimonials() {
 								</div>
 							</div>
 						))}
-					</div>
+					</div>{" "}
+					bg-[#e1e1e1] relative z-[60]
 				</Marquee>
 				<Marquee baseVelocity={-0.1}>
-					<div className="flex m-0 gap-x-[20rem] items-center mr-[20rem]">
+					<div className="flex m-0 gap-x-[20rem] items-center mr-[20rem] bg-[#e1e1e1] relative z-[60]">
 						{[...testimonials, ...testimonials, ...testimonials].map((item) => (
 							<div
 								className="flex flex-col gap-[20rem]"
