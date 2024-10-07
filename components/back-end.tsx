@@ -1,5 +1,4 @@
 import LinkBox from "./Skill";
-import { TextMask } from "@animation";
 import { motion } from "framer-motion";
 import { backEndItems } from "@constants";
 
@@ -8,7 +7,7 @@ export default function BackEnd() {
 		<div className="w-full h-screen padding-x py-[30rem] bg-[#e1e1e1] relative z-50">
 			<div className="flex flex-col justify-between h-full gap-[20rem]">
 				<div className="w-full flex justify-start">
-					<h1 className="text-[#202020] uppercase leading-none sm:text-[80rem] md:text-[100rem] text-[100rem] font-semibold overflow-hidden">
+					<h1 className="text-[#202020] uppercase leading-none sm:text-[80rem] md:text-[100rem] text-[80rem] font-semibold overflow-hidden">
 						{"backend".split("").map((item: string, i: number) => (
 							<motion.span
 								initial={{ y: "100%" }}
@@ -93,7 +92,7 @@ export default function BackEnd() {
 					</div>
 				</div>
 				<div className="w-full flex justify-end">
-					<h1 className="text-[#202020] uppercase leading-none sm:text-[80rem] md:text-[100rem] text-[100rem] font-semibold overflow-hidden">
+					<h1 className="text-[#202020] uppercase leading-none sm:text-[80rem] md:text-[100rem] text-[80rem] font-semibold overflow-hidden">
 						{"skills".split("").map((item: string, i: number) => (
 							<motion.span
 								initial={{ y: "100%" }}

@@ -7,8 +7,8 @@ export default function FrontEnd() {
 		<div className="w-full h-screen padding-x py-[30rem] sticky top-0 bg-[#e1e1e1]">
 			<div className="flex flex-col justify-between h-full gap-[20rem]">
 				<div className="w-full flex justify-start">
-					<h1 className="text-[#202020] uppercase leading-none sm:text-[80rem] md:text-[100rem] text-[100rem] font-semibold overflow-hidden">
-						{"fontend".split("").map((item: string, i: number) => (
+					<h1 className="text-[#202020] uppercase leading-none sm:text-[80rem] md:text-[100rem] text-[80rem] font-semibold overflow-hidden">
+						{"frontend".split("").map((item: string, i: number) => (
 							<motion.span
 								initial={{ y: "100%" }}
 								whileInView={{ y: 0 }}
@@ -90,7 +90,7 @@ export default function FrontEnd() {
 					</div>
 				</div>
 				<div className="w-full flex justify-end">
-					<h1 className="text-[#202020] uppercase leading-none sm:text-[80rem] md:text-[100rem] text-[100rem] font-semibold overflow-hidden">
+					<h1 className="text-[#202020] uppercase leading-none sm:text-[80rem] md:text-[100rem] text-[80rem] font-semibold overflow-hidden">
 						{"skills".split("").map((item: string, i: number) => (
 							<motion.span
 								initial={{ y: "100%" }}
