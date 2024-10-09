@@ -11,7 +11,7 @@ export default function Footer() {
 				<div className="w-full h-[8vh] " />
 				<div className="flex items-center justify-center flex-col gap-y-[10rem] w-full h-auto ">
 					<div>
-						<h1 className="text-[#202020] uppercase leading-none sm:text-[80rem] md:text-[100rem] text-[130rem] font-semibold">
+						<h1 className="text-[#202020] uppercase leading-none sm:text-[80rem] md:text-[100rem] text-[130rem] font-bold tracking-tight">
 							<TextMask>{phrases}</TextMask>
 						</h1>
 					</div>

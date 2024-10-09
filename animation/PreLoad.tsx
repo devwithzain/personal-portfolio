@@ -83,7 +83,7 @@ export default function Loader() {
 			<div className="bar flex-1 w-full bg-[#d6d5d5] py-[24rem] mt-[-1rem]">
 				<div className="marquee relative left-[100vw] w-[300vw] flex gap-[40rem] text-[18rem] uppercase">
 					{Array(20)
-						.fill("Zain Ali")
+						.fill("zain")
 						.map((text, index) => (
 							<p
 								key={index}
@@ -100,7 +100,7 @@ export default function Loader() {
 			<div className="bar flex-1 w-full bg-[#d6d5d5] py-[24rem] mt-[-1rem] flex flex-col justify-end">
 				<div className="marquee relative left-[100vw] w-[300vw] flex gap-[40rem] text-[18rem] uppercase">
 					{Array(20)
-						.fill("Zain Ali")
+						.fill("zain")
 						.map((text, index) => (
 							<p
 								key={index}

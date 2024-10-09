@@ -1,17 +1,39 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
+import { Dispatch, SetStateAction } from "react";
 
-export default function ProjectCard({ item }: { item: any }) {
+export default function ProjectCard({
+	item,
+	index,
+	setModal,
+}: {
+	item: any;
+	index: number;
+	setModal: Dispatch<
+		SetStateAction<{
+			active: boolean;
+			index: number;
+		}>
+	>;
+}) {
 	return (
-		<div className="relative w-full group h-full">
+		<div
+			className="relative w-full h-full"
+			onMouseEnter={() => {
+				setModal({ active: true, index });
+			}}
+			onMouseLeave={() => {
+				setModal({ active: false, index });
+			}}>
 			<Link
 				href={item.href}
-				className="rounded-[10rem] overflow-hidden hover:scale-[0.95] transition cursor-pointer transform duration-[1s] ease-[.4,0,.2,1] block">
+				target="_blank"
+				className="rounded-[10rem] overflow-hidden block">
 				<Image
 					src={item.img}
 					alt={`${item.title}Img`}
-					className="object-cover rounded-[10rem] group-hover:scale-[1.09]  transform duration-[1s] ease-[.4,0,.2,1] h-full w-full"
+					className="object-cover rounded-[10rem] h-full w-full"
 				/>
 			</Link>
 		</div>

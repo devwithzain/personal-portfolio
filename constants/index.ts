@@ -8,8 +8,6 @@ import {
     SiTypescript,
     SiZod,
 } from "react-icons/si";
-import { useAnimate } from "framer-motion";
-import { IconType } from "react-icons";
 import {
     FaCss3Alt,
     FaDocker,
@@ -22,7 +20,7 @@ import { FaReact, FaFigma } from "react-icons/fa6";
 import { DiMongodb } from "react-icons/di";
 import { BiLogoPostgresql } from "react-icons/bi";
 
-import { avatar1, avatar2, avatar3, avatar4, avatar5, avatar6, avatar7, avatar8, avatar9, chatgpt, code, css3, docker, figma, github, gpt3, hoobank, html, ipdc, js, lassles, metaverse, mongodb, next, nike, node, ochi, prisma, python, react_query, redux, rhf, tailwind, trpc, typescript, zod } from "@public";
+import { avatar1, avatar10, avatar11, avatar12, avatar2, avatar3, avatar4, avatar5, avatar6, avatar7, avatar8, avatar9, github, lightsass, metaverse, nike, ochi, supadupa, } from "@public";
 
 export const project = [
     {
@@ -43,17 +41,17 @@ export const project = [
     },
     {
         id: 3,
-        title: "IPDC",
-        img: ipdc,
-        color: "#FFEAF5",
-        href: "https://infd-finance-landing-page.vercel.app/"
+        title: "SupaDupa",
+        img: supadupa,
+        color: "#163200",
+        href: "https://supadupa-website-clone-by-devwithzain.vercel.app/"
     },
     {
         id: 4,
-        title: "Nike",
-        img: nike,
-        color: "#ECEEFF",
-        href: "https://nike-woad-one.vercel.app/"
+        title: "LightSass",
+        img: lightsass,
+        color: "#0D1EA2",
+        href: "https://light-sass-landing-page-devwithzain.vercel.app/"
     },
     {
         id: 5,
@@ -64,36 +62,11 @@ export const project = [
     },
     {
         id: 6,
-        title: "HooBank",
-        img: hoobank,
-        color: "#172235",
-        href: "https://hoobank-app-pi.vercel.app/"
+        title: "Nike",
+        img: nike,
+        color: "#ECEEFF",
+        href: "https://nike-woad-one.vercel.app/"
     },
-    {
-        id: 7,
-        title: "Lasless",
-        img: lassles,
-        color: "#FFECEC",
-        href: "https://lasles-vpn-tau.vercel.app/"
-    },
-    {
-        id: 8,
-        title: "GPT-3",
-        img: gpt3,
-        color: "#012043",
-        href: "https://gpt-3-open-ai-green.vercel.app/"
-    },
-];
-
-export const words = [
-    "Hello",
-    "Bonjour",
-    "Ciao",
-    "Olà",
-    "やあ",
-    "Hallå",
-    "Guten tag",
-    "Assalamu Alaikum",
 ];
 
 export const paragraph =
@@ -159,87 +132,6 @@ export const TfooterItem = [
     },
 ];
 
-export const skillsData = [
-    {
-        id: 1,
-        src: html
-    },
-    {
-        id: 2,
-        src: node
-    },
-    {
-        id: 3,
-        src: js
-    },
-    {
-        id: 4,
-        src: tailwind
-
-    },
-    {
-        id: 5,
-        src: css3
-    },
-    {
-        id: 6,
-        src: docker
-    },
-    {
-        id: 7,
-        src: python
-    },
-    {
-        id: 8,
-        src: figma
-    },
-    {
-        id: 9,
-        src: code
-    },
-    {
-        id: 10,
-        src: chatgpt
-    },
-    {
-        id: 11,
-        src: typescript
-    },
-    {
-        id: 12,
-        src: mongodb
-    },
-    {
-        id: 13,
-        src: next
-    },
-    {
-        id: 14,
-        src: rhf
-    },
-
-    {
-        id: 15,
-        src: trpc
-    },
-    {
-        id: 16,
-        src: react_query
-    },
-    {
-        id: 17,
-        src: prisma
-    },
-    {
-        id: 18,
-        src: redux
-    },
-    {
-        id: 19,
-        src: zod
-    },
-];
-
 export const links = [
     {
         title: "Projects",
@@ -285,67 +177,88 @@ export const footerLinks = [
 export const testimonials = [
     {
         id: 1,
-        text: "Its user-friendly interface and robust features support our diverse needs.",
-        src: avatar9,
-        name: "Casey Harper",
-        username: "@casey09",
+        text: "Zain's web development skills are outstanding! He transformed our outdated site into a modern, responsive masterpiece. Highly recommended!",
+        src: avatar1,
+        name: "John D.",
+        username: "@johndev",
     },
     {
         id: 2,
-        text: "As a seasoned designer always on the lookout for innovative tools, Framer.com instantly grabbed my attention.",
-        src: avatar1,
-        name: "Jamie Rivera",
-        username: "@jamietechguru00",
+        text: "The attention to detail Zain brought to our project was amazing. He exceeded our expectations and delivered on time.",
+        src: avatar2,
+        name: "Emily S.",
+        username: "@emilysweb",
     },
     {
         id: 3,
-        text: "Our team's productivity has skyrocketed since we started using this tool. ",
-        src: avatar2,
-        name: "Josh Smith",
-        username: "@jjsmith",
+        text: "Zain is a fantastic web developer! He quickly understood our needs and built a site that's both functional and beautiful.",
+        src: avatar3,
+        name: "Michael T.",
+        username: "@michaeltech",
     },
     {
         id: 4,
-        text: "This app has completely transformed how I manage my projects and deadlines.",
-        src: avatar3,
-        name: "Morgan Lee",
-        username: "@morganleewhiz",
+        text: "Working with Zain was a pleasure. His creativity and technical skills took our website to the next level!",
+        src: avatar4,
+        name: "Sarah K.",
+        username: "@sarahcreative",
     },
     {
         id: 5,
-        text: "I was amazed at how quickly we were able to integrate this app into our workflow.",
-        src: avatar4,
-        name: "Casey Jordan",
-        username: "@caseyj",
+        text: "I’ve worked with many developers, but Zain stands out. His code is clean, his designs are user-friendly, and he always meets deadlines.",
+        src: avatar5,
+        name: "David M.",
+        username: "@davidsites",
     },
     {
         id: 6,
-        text: "Planning and executing events has never been easier. This app helps me keep track of all the moving parts, ensuring nothing slips through the cracks.",
-        src: avatar5,
-        name: "Taylor Kim",
-        username: "@taylorkimm",
+        text: "Zain's expertise in web development is top-notch. Our new e-commerce platform runs smoother and faster thanks to him.",
+        src: avatar6,
+        name: "Olivia P.",
+        username: "@oliviacode",
     },
     {
         id: 7,
-        text: "The customizability and integration capabilities of this app are top-notch.",
-        src: avatar6,
-        name: "Riley Smith",
-        username: "@rileysmith1",
+        text: "Zain not only delivered a visually stunning site but also optimized it for SEO, giving us a boost in traffic. Highly impressed!",
+        src: avatar7,
+        name: "Brian H.",
+        username: "@briandev",
     },
     {
         id: 8,
-        text: "Adopting this app for our team has streamlined our project management and improved communication across the board.",
-        src: avatar7,
-        name: "Jordan Patels",
-        username: "@jpatelsdesign",
+        text: "If you're looking for a reliable, talented web developer, Zain is your guy. He’s professional, fast, and creative!",
+        src: avatar8,
+        name: "Sophia L.",
+        username: "@sophiadesign",
     },
     {
         id: 9,
-        text: "With this app, we can easily assign tasks, track progress, and manage documents all in one place.",
-        src: avatar8,
-        name: "Sam Dawson",
-        username: "@dawsontechtips",
+        text: "Zain’s web work is incredible. Our site's performance and user experience have improved significantly since the redesign.",
+        src: avatar9,
+        name: "James R.",
+        username: "@jamesreboot",
     },
+    {
+        id: 10,
+        text: "Zain is a genius when it comes to web development. He was able to turn our ideas into a beautiful, functional reality.",
+        src: avatar10,
+        name: "Ava W.",
+        username: "@avadesign",
+    },
+    {
+        id: 11,
+        text: "We had a complicated project, and Zain handled it with ease. His problem-solving skills are unmatched.",
+        src: avatar11,
+        name: "Lucas G.",
+        username: "@lucaswebpro",
+    },
+    {
+        id: 12,
+        text: "Zain's professionalism and passion for web development truly shine through in his work. We couldn’t be happier with our website!",
+        src: avatar12,
+        name: "Grace N.",
+        username: "@gracedesign",
+    }
 ];
 
 export const iconGroups = [

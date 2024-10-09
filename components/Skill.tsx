@@ -85,7 +85,7 @@ export default function LinkBox({ Icon }: { Icon: IconType }) {
 			onMouseLeave={(e: React.MouseEvent<HTMLDivElement>) => {
 				handleMouseLeave(e);
 			}}
-			className="relative grid h-[150rem] w-full place-content-center">
+			className="relative grid h-[200rem] w-full place-content-center">
 			<Icon className="text-[60rem]" />
 			<div
 				ref={scope}

@@ -1,28 +1,18 @@
 import LinkBox from "./Skill";
+import { TextMask } from "@animation";
 import { motion } from "framer-motion";
 import { backEndItems } from "@constants";
 
 export default function BackEnd() {
+	const phares = ["back end"];
+	const phares1 = ["skills"];
 	return (
-		<div className="w-full h-screen padding-x py-[30rem] bg-[#e1e1e1] relative z-50">
-			<div className="flex flex-col justify-between h-full gap-[20rem]">
+		<div className="w-full h-screen padding-x py-[20rem] bg-[#e1e1e1] relative z-50">
+			<div className="flex flex-col justify-center items-center h-full gap-[20rem]">
 				<div className="w-full flex justify-start">
-					<h1 className="text-[#202020] uppercase leading-none sm:text-[80rem] md:text-[100rem] text-[80rem] font-semibold overflow-hidden">
-						{"backend".split("").map((item: string, i: number) => (
-							<motion.span
-								initial={{ y: "100%" }}
-								whileInView={{ y: 0 }}
-								viewport={{ once: true }}
-								transition={{
-									delay: i * 0.1,
-									duration: 0.5,
-									ease: [0.4, 0, 0.2, 1],
-								}}
-								className="inline-block"
-								key={i}>
-								{item}
-							</motion.span>
-						))}
+					<h1 className="text-[#202020] uppercase leading-none sm:text-[80rem] md:text-[100rem] text-[130rem] font-bold overflow-hidden">
+						<TextMask>{phares}</TextMask>
+						<TextMask>{phares1}</TextMask>
 					</h1>
 				</div>
 				<div className="w-full">
@@ -90,25 +80,6 @@ export default function BackEnd() {
 							</div>
 						))}
 					</div>
-				</div>
-				<div className="w-full flex justify-end">
-					<h1 className="text-[#202020] uppercase leading-none sm:text-[80rem] md:text-[100rem] text-[80rem] font-semibold overflow-hidden">
-						{"skills".split("").map((item: string, i: number) => (
-							<motion.span
-								initial={{ y: "100%" }}
-								whileInView={{ y: 0 }}
-								viewport={{ once: true }}
-								transition={{
-									delay: i * 0.1,
-									duration: 0.5,
-									ease: [0.4, 0, 0.2, 1],
-								}}
-								className="inline-block"
-								key={i}>
-								{item}
-							</motion.span>
-						))}
-					</h1>
 				</div>
 			</div>
 		</div>
