@@ -261,110 +261,69 @@ export const testimonials = [
     }
 ];
 
-export const iconGroups = [
+export const skillItems = [
     {
         id: 1,
-        row1: [
-            {
-                id: 1,
-                Icon: FaHtml5
-            },
-            {
-                id: 2,
-                Icon: FaCss3Alt
-            }
-        ],
+        Icon: FaHtml5
     },
     {
         id: 2,
-        row2: [
-            {
-                id: 1,
-                Icon: RiTailwindCssFill
-            },
-            {
-                id: 2,
-                Icon: FaFigma
-            },
-            {
-                id: 3,
-                Icon: SiTypescript
-            },
-            {
-                id: 4,
-                Icon: SiNextdotjs
-            }
-        ],
+        Icon: FaCss3Alt
     },
     {
         id: 3,
-        row3: [
-            {
-                id: 1,
-                Icon: SiZod
-            },
-            {
-                id: 2,
-                Icon: FaReact
-            },
-            {
-                id: 3,
-                Icon: SiReacthookform
-            }
-        ],
-    },
-];
-
-export const backEndItems = [
-    {
-        id: 1,
-        row1: [
-            {
-                id: 1,
-                Icon: FaDocker
-            },
-            {
-                id: 2,
-                Icon: FaPython
-            },
-            {
-                id: 3,
-                Icon: SiBun
-            },
-        ],
+        Icon: RiTailwindCssFill
     },
     {
-        id: 2,
-        row2: [
-            {
-                id: 1,
-                Icon: SiTrpc
-            },
-            {
-                id: 2,
-                Icon: SiPrisma
-            },
-            {
-                id: 3,
-                Icon: SiRedux
-            },
-            {
-                id: 4,
-                Icon: BiLogoPostgresql
-            }
-        ],
+        id: 4,
+        Icon: FaFigma
     },
     {
-        id: 3,
-        row3: [
-            {
-                id: 1,
-                Icon: DiMongodb
-            },
-            {
-                id: 2,
-                Icon: FaNodeJs
-            },
-        ],
+        id: 5,
+        Icon: SiTypescript
     },
+    {
+        id: 6,
+        Icon: SiNextdotjs
+    },
+    {
+        id: 7,
+        Icon: SiZod
+    },
+    {
+        id: 8,
+        Icon: FaReact
+    },
+    {
+        id: 9,
+        Icon: SiReacthookform
+    },
+    {
+        id: 10,
+        Icon: FaDocker
+    },
+    {
+        id: 11,
+        Icon: FaPython
+    },
+    {
+        id: 12,
+        Icon: DiMongodb
+    },
+    {
+        id: 13,
+        Icon: FaNodeJs
+    },
+    {
+        id: 14,
+        Icon: SiPrisma
+    },
+    {
+        id: 15,
+        Icon: SiRedux
+    },
+    {
+        id: 16,
+        Icon: BiLogoPostgresql
+    }
 ];

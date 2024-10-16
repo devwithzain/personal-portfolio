@@ -9,4 +9,3 @@ export { default as Skill } from './Skill';
 export { default as Testimonials } from './Testimonials';
 export { default as Menu } from './Side-Menu/SideHome';
 export { default as FrontEnd } from './front-end';
-export { default as BackEnd } from './back-end';
