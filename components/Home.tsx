@@ -1,7 +1,6 @@
 import { Parallax, Sticky } from "@animation";
 import {
 	About,
-	BackEnd,
 	Footer,
 	Hero,
 	Process,
@@ -24,7 +23,6 @@ export default function Home() {
 			<Process />
 			<Parallax />
 			<FrontEnd />
-			<BackEnd />
 			<Testimonials />
 			<div className="px-[50rem]">{<Footer />}</div>
 		</>

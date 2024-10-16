@@ -20,7 +20,7 @@ export default function Process() {
 	return (
 		<section className="w-full my-[100rem]">
 			<div className="flex sm:flex-col lg:items-center gap-x-[20rem] border-b border-[#8D8D8D] px-[50rem]">
-				<h1 className="text-[#202020] uppercase leading-none sm:text-[80rem] md:text-[100rem] text-[130rem] font-bold tracking-tight overflow-hidden">
+				<h1 className="text-[#202020] uppercase leading-none sm:text-[80rem] md:text-[100rem] text-[100rem] font-bold tracking-tight overflow-hidden">
 					{"process".split("").map((item: string, i: number) => (
 						<motion.span
 							initial={{ y: "100%" }}

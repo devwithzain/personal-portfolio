@@ -8,7 +8,7 @@ export default function Testimonials() {
 	return (
 		<section className="pt-[80rem] bg-[#e1e1e1] relative z-[60]">
 			<div className="w-full flex justify-start padding-x pb-[40rem]">
-				<h1 className="text-[#202020] uppercase leading-none sm:text-[80rem] md:text-[100rem] text-[130rem] font-bold overflow-hidden">
+				<h1 className="text-[#202020] uppercase leading-none sm:text-[80rem] md:text-[100rem] text-[100rem] font-bold overflow-hidden">
 					<TextMask>{phares}</TextMask>
 					<TextMask>{phares1}</TextMask>
 				</h1>

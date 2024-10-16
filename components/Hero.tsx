@@ -62,7 +62,7 @@ export default function Hero() {
 			<div className="w-full h-full flex flex-col gap-[30rem] pt-[8vh] overflow-hidden">
 				<div className="header w-full flex gap-[30rem] justify-between">
 					<div className="col flex-1">
-						<h1 className="ml12 text-[80rem] font-bold leading-none tracking-tight uppercase">
+						<h1 className="ml12 text-[70rem] inline-block font-bold leading-none tracking-tight uppercase">
 							The game web design <br /> deserves the most.
 						</h1>
 					</div>
