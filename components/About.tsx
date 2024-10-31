@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 
 export default function About() {
 	return (
-		<section className="w-full my-[100rem]">
-			<h1 className="text-[#202020] uppercase leading-none sm:text-[80rem] md:text-[100rem] text-[100rem] font-bold tracking-tight overflow-hidden">
+		<section className="w-full my-[100px]">
+			<h1 className="text-[#202020] uppercase leading-none sm:text-[80px] md:text-[100px] text-[100px] font-bold tracking-tight overflow-hidden">
 				{"about".split("").map((item: string, i: number) => (
 					<motion.span
 						initial={{ y: "100%" }}

@@ -6,8 +6,7 @@
 	cursor: none;
 }
 
-html {
-	font-size: 6.25%;
+body {
 	font-family: montreal;
 	background-color: #e1e1e1;
 	overflow-x: hidden;
@@ -24,22 +23,22 @@ body::-webkit-scrollbar {
 
 @layer utilities {
 	.padding-x {
-		@apply px-[50rem] lg:px-[40rem] md:px-[30rem] sm:px-[20rem] xm:px-[20rem];
+		@apply px-[50px] lg:px-[40px] md:px-[30px] sm:px-[20px] xm:px-[20px];
 	}
 	.padding-y {
-		@apply py-[rem] lg:py-[rem] md:py-[rem] sm:py-[rem] xm:py-[rem];
+		@apply py-[px] lg:py-[px] md:py-[px] sm:py-[px] xm:py-[px];
 	}
 	.heading {
-		@apply text-[rem] lg:text-[rem] md:text-[rem] sm:text-[rem] xm:text-[rem];
+		@apply text-[px] lg:text-[px] md:text-[px] sm:text-[px] xm:text-[px];
 	}
 	.subHeading {
-		@apply text-[rem] lg:text-[rem] md:text-[rem] sm:text-[rem] xm:text-[rem];
+		@apply text-[px] lg:text-[px] md:text-[px] sm:text-[px] xm:text-[px];
 	}
 	.paragraph {
-		@apply text-[rem] lg:text-[rem] md:text-[rem] sm:text-[rem] xm:text-[rem];
+		@apply text-[px] lg:text-[px] md:text-[px] sm:text-[px] xm:text-[px];
 	}
 	.subParagraph {
-		@apply text-[rem] lg:text-[rem] md:text-[rem] sm:text-[rem] xm:text-[rem];
+		@apply text-[px] lg:text-[px] md:text-[px] sm:text-[px] xm:text-[px];
 	}
 }
 .slider {
@@ -101,10 +100,10 @@ body::-webkit-scrollbar {
 	position: absolute;
 	top: 0;
 	right: 0;
-	width: 100rem;
-	height: 40rem;
+	width: 100px;
+	height: 40px;
 	cursor: pointer;
-	border-radius: 25rem;
+	border-radius: 25px;
 	overflow: hidden;
 }
 
@@ -121,7 +120,7 @@ body::-webkit-scrollbar {
 }
 
 .button .slider .el p {
-	margin: 0rem;
+	margin: 0px;
 }
 
 .button .slider .el:nth-of-type(2) {
@@ -160,7 +159,7 @@ body::-webkit-scrollbar {
 	transition: all 0.75s cubic-bezier(0.76, 0, 0.24, 1);
 	pointer-events: none;
 	text-transform: uppercase;
-	font-size: 16rem;
+	font-size: 16px;
 }
 
 .perspectiveText p:nth-of-type(2) {

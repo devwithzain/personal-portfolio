@@ -40,3 +40,9 @@ export { default as avatar9 } from "./avatar-9.png";
 export { default as avatar10 } from "./avatar-10.avif";
 export { default as avatar11 } from "./avatar-11.avif";
 export { default as avatar12 } from "./avatar-12.avif";
+
+export { default as img1 } from "./img1.png";
+export { default as img2 } from "./img2.png";
+export { default as img3 } from "./img3.png";
+export { default as img4 } from "./img4.png";
+export { default as img5 } from "./img5.png";

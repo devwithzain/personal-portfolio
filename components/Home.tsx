@@ -7,6 +7,7 @@ import {
 	Project,
 	FrontEnd,
 	Testimonials,
+	Services,
 } from "@components";
 
 export default function Home() {
@@ -15,7 +16,7 @@ export default function Home() {
 			<div className="sm:hidden block">
 				<Sticky />
 			</div>
-			<div className="px-[50rem]">
+			<div className="px-[50px]">
 				<Hero />
 				<About />
 			</div>
@@ -24,7 +25,8 @@ export default function Home() {
 			<Parallax />
 			<FrontEnd />
 			<Testimonials />
-			<div className="px-[50rem]">{<Footer />}</div>
+			<Services />
+			<div className="px-[50px]">{<Footer />}</div>
 		</>
 	);
 }

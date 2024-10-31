@@ -18,9 +18,9 @@ export default function Process() {
 	};
 
 	return (
-		<section className="w-full my-[100rem]">
-			<div className="flex sm:flex-col lg:items-center gap-x-[20rem] border-b border-[#8D8D8D] px-[50rem]">
-				<h1 className="text-[#202020] uppercase leading-none sm:text-[80rem] md:text-[100rem] text-[100rem] font-bold tracking-tight overflow-hidden">
+		<section className="w-full my-[100px]">
+			<div className="flex sm:flex-col lg:items-center gap-x-[20px] border-b border-[#8D8D8D] px-[50px]">
+				<h1 className="text-[#202020] uppercase leading-none sm:text-[80px] md:text-[100px] text-[100px] font-bold tracking-tight overflow-hidden">
 					{"process".split("").map((item: string, i: number) => (
 						<motion.span
 							initial={{ y: "100%" }}
@@ -38,15 +38,15 @@ export default function Process() {
 					))}
 				</h1>
 			</div>
-			<div className="w-full items-end flex py-[50rem] flex-col px-[50rem]">
+			<div className="w-full items-end flex py-[50px] flex-col px-[50px]">
 				{processItem.map((item) => (
 					<div
 						key={item.id}
-						className="sm:w-full w-[60%] flex-col flex py-[15rem] border-b border-black">
+						className="sm:w-full w-[60%] flex-col flex py-[15px] border-b border-black">
 						<div
 							className="flex items-center justify-between transition-all duration-500 ease-in-out cursor-pointer"
 							onClick={() => toggleAccordion(item.id)}>
-							<div className="flex gap-x-[40rem] items-center">
+							<div className="flex gap-x-[40px] items-center">
 								<TextHover
 									titile1="0"
 									subTitle1={item.id}
@@ -54,7 +54,7 @@ export default function Process() {
 									subTitle2={item.subTitle}
 								/>
 							</div>
-							<button className="text-[50rem]">
+							<button className="text-[50px]">
 								{activeAccordion === item.id ? "-" : "+"}
 							</button>
 						</div>
@@ -69,7 +69,7 @@ export default function Process() {
 										duration: 1,
 										type: "tween",
 									}}>
-									<p className="text-[22rem] mb-[10rem]">{item.para}</p>
+									<p className="text-[22px] mb-[10px]">{item.para}</p>
 								</motion.div>
 							)}
 						</AnimatePresence>

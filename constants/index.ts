@@ -1,10 +1,8 @@
 import {
-    SiBun,
     SiNextdotjs,
     SiPrisma,
     SiReacthookform,
     SiRedux,
-    SiTrpc,
     SiTypescript,
     SiZod,
 } from "react-icons/si";
@@ -20,7 +18,7 @@ import { FaReact, FaFigma } from "react-icons/fa6";
 import { DiMongodb } from "react-icons/di";
 import { BiLogoPostgresql } from "react-icons/bi";
 
-import { avatar1, avatar10, avatar11, avatar12, avatar2, avatar3, avatar4, avatar5, avatar6, avatar7, avatar8, avatar9, github, lightsass, metaverse, nike, ochi, supadupa, } from "@public";
+import { avatar1, avatar10, avatar11, avatar12, avatar2, avatar3, avatar4, avatar5, avatar6, avatar7, avatar8, avatar9, github, img1, img2, img3, img4, img5, lightsass, metaverse, nike, ochi, supadupa, } from "@public";
 
 export const project = [
     {
@@ -326,4 +324,42 @@ export const skillItems = [
         id: 16,
         Icon: BiLogoPostgresql
     }
+];
+
+export const servicesItem = [
+    {
+        id: 1,
+        title: "Responsive Web Development",
+        description:
+            "Craft responsive websites that deliver consistent, high-quality user experiences across all devices, from desktops to mobile.",
+        img: img5,
+    },
+    {
+        id: 2,
+        title: "UI/UX Design Implementation",
+        description:
+            "Turn design concepts into functional interfaces that prioritize usability and accessibility, enhancing the user experience on every page.",
+        img: img4,
+    },
+    {
+        id: 3,
+        title: "E-commerce Solutions",
+        description:
+            "Build robust, scalable e-commerce platforms optimized for conversions, ensuring smooth shopping experiences and secure transactions.",
+        img: img3,
+    },
+    {
+        id: 4,
+        title: "Performance Optimization",
+        description:
+            "Enhance website speed and performance through efficient code and best practices, improving SEO rankings and reducing bounce rates.",
+        img: img2,
+    },
+    {
+        id: 5,
+        title: "Interactive and Dynamic Features",
+        description:
+            "Develop interactive features using modern animations and dynamic content, engaging users and setting your site apart.",
+        img: img1,
+    },
 ];

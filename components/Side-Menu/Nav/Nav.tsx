@@ -9,8 +9,8 @@ import { footerLinks, links } from "@/constants";
 export default function Nav({ toggleMenu }: TnavProps) {
 	const pathname = usePathname();
 	return (
-		<div className="flex flex-col justify-between pr-[80rem] pl-[40rem] pt-[80rem] pb-[40rem] h-full">
-			<div className="flex gap-[15rem] flex-col">
+		<div className="flex flex-col justify-between pr-[80px] pl-[40px] pt-[80px] pb-[40px] h-full">
+			<div className="flex gap-[15px] flex-col">
 				{links.map((link, i) => {
 					const { title, href } = link;
 					return (
@@ -26,7 +26,7 @@ export default function Nav({ toggleMenu }: TnavProps) {
 								<Link
 									onClick={toggleMenu}
 									href={href}
-									className={`text-black text-[46rem] sm:text-[40rem] xm:text-[36rem] leading-none ${
+									className={`text-black text-[46px] sm:text-[40px] xm:text-[36px] leading-none ${
 										pathname === link.href ? "font-semibold" : ""
 									}`}>
 									{title}
@@ -36,12 +36,12 @@ export default function Nav({ toggleMenu }: TnavProps) {
 					);
 				})}
 			</div>
-			<motion.div className="flex flex-wrap mt-[40rem]">
+			<motion.div className="flex flex-wrap mt-[40px]">
 				{footerLinks.map((link, i) => {
 					const { title, href } = link;
 					return (
 						<motion.div
-							className="w-[50%] mt-[5rem] text-[16rem]"
+							className="w-[50%] mt-[5px] text-[16px]"
 							variants={slideIn}
 							custom={i}
 							initial="initial"

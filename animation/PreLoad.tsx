@@ -70,7 +70,7 @@ export default function Loader() {
 
 	return (
 		<div className="fixed w-full h-full flex flex-col top-0 left-0 z-50">
-			<div className="finder-container w-[80%] h-[500rem] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
+			<div className="finder-container w-[80%] h-[500px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
 				{[frame, frame, frame, frame, frame].map((frame, index) => (
 					<Image
 						key={index}
@@ -80,32 +80,32 @@ export default function Loader() {
 					/>
 				))}
 			</div>
-			<div className="bar flex-1 w-full bg-[#d6d5d5] py-[24rem] mt-[-1rem]">
-				<div className="marquee relative left-[100vw] w-[300vw] flex gap-[40rem] text-[18rem] uppercase">
+			<div className="bar flex-1 w-full bg-[#d6d5d5] py-[24px] mt-[-1px]">
+				<div className="marquee relative left-[100vw] w-[300vw] flex gap-[40px] text-[18px] uppercase">
 					{Array(20)
 						.fill("zain")
 						.map((text, index) => (
 							<p
 								key={index}
-								className="flex items-center gap-[10rem] text-[18rem] font-medium whitespace-nowrap">
-								<span className="relative pr-[4rem] text-[36rem]">■</span>
+								className="flex items-center gap-[10px] text-[18px] font-medium whitespace-nowrap">
+								<span className="relative pr-[4px] text-[36px]">■</span>
 								{text}
 							</p>
 						))}
 				</div>
 			</div>
-			<div className="bar flex-1 w-full bg-[#d6d5d5] py-[24rem] mt-[-1rem]" />
-			<div className="bar flex-1 w-full bg-[#d6d5d5] py-[24rem] mt-[-1rem]" />
-			<div className="bar flex-1 w-full bg-[#d6d5d5] py-[24rem] mt-[-1rem]" />
-			<div className="bar flex-1 w-full bg-[#d6d5d5] py-[24rem] mt-[-1rem] flex flex-col justify-end">
-				<div className="marquee relative left-[100vw] w-[300vw] flex gap-[40rem] text-[18rem] uppercase">
+			<div className="bar flex-1 w-full bg-[#d6d5d5] py-[24px] mt-[-1px]" />
+			<div className="bar flex-1 w-full bg-[#d6d5d5] py-[24px] mt-[-1px]" />
+			<div className="bar flex-1 w-full bg-[#d6d5d5] py-[24px] mt-[-1px]" />
+			<div className="bar flex-1 w-full bg-[#d6d5d5] py-[24px] mt-[-1px] flex flex-col justify-end">
+				<div className="marquee relative left-[100vw] w-[300vw] flex gap-[40px] text-[18px] uppercase">
 					{Array(20)
 						.fill("zain")
 						.map((text, index) => (
 							<p
 								key={index}
-								className="flex items-center gap-[10rem] text-[18rem] font-medium whitespace-nowrap">
-								<span className="relative pr-[4rem] text-[36rem]">■</span>
+								className="flex items-center gap-[10px] text-[18px] font-medium whitespace-nowrap">
+								<span className="relative pr-[4px] text-[36px]">■</span>
 								{text}
 							</p>
 						))}

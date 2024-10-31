@@ -27,17 +27,17 @@ export default function Project() {
 	const [modal, setModal] = useState({ active: false, index: 0 });
 
 	return (
-		<section className="w-full my-[100rem]">
+		<section className="w-full my-[100px]">
 			<Marquee baseVelocity={2}>
-				<h1 className="text-[#202020] uppercase text-[100rem] font-bold tracking-tight flex items-center justify-center">
-					<span className="w-[40rem] h-[40rem] bg-[#8c8c8c] rounded-full mx-[20rem]" />
+				<h1 className="text-[#202020] uppercase text-[100px] font-bold tracking-tight flex items-center justify-center">
+					<span className="w-[40px] h-[40px] bg-[#8c8c8c] rounded-full mx-[20px]" />
 					selected
-					<span className="w-[40rem] h-[40rem] bg-[#8c8c8c] rounded-full mx-[20rem]" />
+					<span className="w-[40px] h-[40px] bg-[#8c8c8c] rounded-full mx-[20px]" />
 					projects
 				</h1>
 			</Marquee>
 			<div
-				className="w-full flex justify-between gap-y-[50rem] padding-x flex-wrap"
+				className="w-full flex justify-between gap-y-[50px] padding-x flex-wrap"
 				ref={container}>
 				{project.map((project, index) => (
 					<motion.div

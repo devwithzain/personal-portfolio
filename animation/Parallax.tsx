@@ -33,7 +33,7 @@ export default function Home() {
 	}, []);
 
 	return (
-		<main className="mt-[100rem] w-full">
+		<main className="mt-[100px] w-full">
 			<div
 				ref={gallery}
 				className="h-[175vh] bg-[#2d2d2d] relative flex gap-[2vw] p-[2vw] overflow-hidden">

@@ -85,15 +85,15 @@ export default function LinkBox({ Icon }: { Icon: IconType }) {
 			onMouseLeave={(e: React.MouseEvent<HTMLDivElement>) => {
 				handleMouseLeave(e);
 			}}
-			className="relative flex items-center justify-center h-[300rem] w-full">
-			<Icon className="text-[80rem]" />
+			className="relative flex items-center justify-center h-[300px] w-full">
+			<Icon className="text-[80px]" />
 			<div
 				ref={scope}
 				style={{
 					clipPath: BOTTOM_RIGHT_CLIP,
 				}}
 				className="absolute inset-0 flex items-center justify-center bg-neutral-900 text-white">
-				<Icon className="text-[80rem]" />
+				<Icon className="text-[80px]" />
 			</div>
 		</div>
 	);

@@ -57,20 +57,20 @@ export default function Hero() {
 		});
 	}, []);
 	return (
-		<section className="w-full h-screen relative py-[20rem]">
+		<section className="w-full h-screen relative py-[20px]">
 			<Navbar />
-			<div className="w-full h-full flex flex-col gap-[30rem] pt-[8vh] overflow-hidden">
-				<div className="header w-full flex gap-[30rem] justify-between">
+			<div className="w-full h-full flex flex-col gap-[30px] pt-[8vh] overflow-hidden">
+				<div className="header w-full flex gap-[30px] justify-between">
 					<div className="col flex-1">
-						<h1 className="ml12 text-[70rem] inline-block font-bold leading-none tracking-tight uppercase">
+						<h1 className="ml12 text-[70px] inline-block font-bold leading-none tracking-tight uppercase">
 							The game web design <br /> deserves the most.
 						</h1>
 					</div>
-					<div className="col flex flex-1 flex-col gap-[10rem]">
-						<p className="relative opacity-0 text-[18rem] inline-block leading-normal tracking-wide">
+					<div className="col flex flex-1 flex-col gap-[10px]">
+						<p className="relative opacity-0 text-[18px] inline-block leading-normal tracking-wide">
 							<TextMask>{phares1}</TextMask>
 						</p>
-						<p className="relative opacity-0 text-[18rem] inline-block leading-normal tracking-wide">
+						<p className="relative opacity-0 text-[18px] inline-block leading-normal tracking-wide">
 							<TextMask>{phares2}</TextMask>
 						</p>
 					</div>

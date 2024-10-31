@@ -59,7 +59,7 @@ export default function Modal({ modal, projects }: TmodalProps) {
 				variants={scaleAnimation}
 				initial="initial"
 				animate={active ? "enter" : "closed"}
-				className="h-[350rem] w-[400rem] absolute bg-white overflow-hidden pointer-events-none flex items-center justify-center sm:hidden">
+				className="h-[350px] w-[400px] absolute bg-white overflow-hidden pointer-events-none flex items-center justify-center sm:hidden">
 				<div
 					style={{ top: index * -100 + "%" }}
 					className="h-full w-full absolute transition-all duration-500 ease-[0.76, 0, 0.24, 1]">
@@ -84,14 +84,14 @@ export default function Modal({ modal, projects }: TmodalProps) {
 			</motion.div>
 			<motion.div
 				ref={cursor}
-				className="w-[80rem] h-[80rem] rounded-[50%] bg-[#455ce9] text-white absolute z-10 flex items-center justify-center text-[14rem] font-light pointer-events-none  sm:hidden"
+				className="w-[80px] h-[80px] rounded-[50%] bg-[#455ce9] text-white absolute z-10 flex items-center justify-center text-[14px] font-light pointer-events-none  sm:hidden"
 				variants={scaleAnimation}
 				initial="initial"
 				animate={active ? "enter" : "closed"}
 			/>
 			<motion.div
 				ref={cursorLabel}
-				className="w-[80rem] h-[80rem] rounded-[50%] bg-[#455ce9] text-white absolute z-10 flex items-center justify-center text-[14rem] font-light pointer-events-none  sm:hidden"
+				className="w-[80px] h-[80px] rounded-[50%] bg-[#455ce9] text-white absolute z-10 flex items-center justify-center text-[14px] font-light pointer-events-none  sm:hidden"
 				variants={scaleAnimation}
 				initial="initial"
 				animate={active ? "enter" : "closed"}>

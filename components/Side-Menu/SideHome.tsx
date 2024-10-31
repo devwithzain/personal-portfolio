@@ -9,9 +9,9 @@ export default function SideHome() {
 	const [isActive, setIsActive] = useState(false);
 
 	return (
-		<div className="fixed right-[50rem] top-[20rem]">
+		<div className="fixed right-[50px] top-[20px]">
 			<motion.div
-				className="bg-[#d6d5d5] rounded-[25rem] relative"
+				className="bg-[#d6d5d5] rounded-[25px] relative"
 				variants={menu}
 				animate={isActive ? "open" : "closed"}
 				initial="closed">

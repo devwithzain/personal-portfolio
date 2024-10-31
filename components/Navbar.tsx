@@ -10,22 +10,22 @@ export default function Navbar() {
 			variants={navVarients}
 			initial="initial"
 			animate="vissible"
-			className="w-full h-[8vh] flex items-center px-[50rem] justify-between fixed backdrop-blur-[1.7rem] z-[99] top-0 left-0">
-			<div className="w-[200rem]">
+			className="w-full h-[8vh] flex items-center px-[50px] justify-between fixed backdrop-blur-[1.7px] z-[99] top-0 left-0">
+			<div className="w-[200px]">
 				<div>
 					<Image
 						src={logo}
 						alt=""
-						className="w-[40rem] h-[40rem] object-cover"
+						className="w-[40px] h-[40px] object-cover"
 					/>
 				</div>
 			</div>
-			<div className="w-[200rem] flex items-center justify-center">
-				<h1 className="text-[30rem] font-bold tracking-wider text-[#202020] uppercase">
+			<div className="w-[200px] flex items-center justify-center">
+				<h1 className="text-[30px] font-bold tracking-wider text-[#202020] uppercase">
 					Zain
 				</h1>
 			</div>
-			<div className="w-[200rem] flex items-center justify-center">
+			<div className="w-[200px] flex items-center justify-center">
 				<Menu />
 			</div>
 		</motion.nav>

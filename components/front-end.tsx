@@ -4,10 +4,10 @@ import { skillItems } from "@constants";
 
 export default function FrontEnd() {
 	return (
-		<div className="w-full padding-x py-[100rem] bg-[#e1e1e1]">
-			<div className="flex flex-col justify-center items-center h-full gap-[20rem]">
+		<div className="w-full padding-x py-[100px] bg-[#e1e1e1]">
+			<div className="flex flex-col justify-center items-center h-full gap-[20px]">
 				<div className="w-full flex justify-start">
-					<h1 className="text-[#202020] uppercase leading-none sm:text-[80rem] md:text-[100rem] text-[100rem] font-bold tracking-tight overflow-hidden">
+					<h1 className="text-[#202020] uppercase leading-none sm:text-[80px] md:text-[100px] text-[100px] font-bold tracking-tight overflow-hidden">
 						{"my skills".split("").map((item: string, i: number) => (
 							<motion.span
 								initial={{ y: "100%" }}
@@ -26,7 +26,7 @@ export default function FrontEnd() {
 					</h1>
 				</div>
 				<div className="w-full">
-					<div className="w-full border-[0.2rem] border-black/10 grid grid-cols-4">
+					<div className="w-full border-[0.2px] border-black/10 grid grid-cols-4">
 						{skillItems.map((items, index) => (
 							<div
 								key={items.id}
@@ -37,7 +37,7 @@ export default function FrontEnd() {
 										initial={{ opacity: 0, scale: 0 }}
 										whileInView={{ opacity: 1, scale: 1 }}
 										viewport={{ once: true }}
-										className="w-full border-[0.2rem] border-black/10"
+										className="w-full border-[0.2px] border-black/10"
 										transition={{
 											duration: 0.5,
 											ease: "easeInOut",
