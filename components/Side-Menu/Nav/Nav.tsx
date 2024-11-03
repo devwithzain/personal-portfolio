@@ -25,7 +25,7 @@ export default function Nav({ toggleMenu }: TnavProps) {
 								exit="exit">
 								<Link
 									onClick={toggleMenu}
-									href={href}
+									href={`#${href}`}
 									className={`text-black text-[46px] sm:text-[40px] xm:text-[36px] leading-none ${
 										pathname === link.href ? "font-semibold" : ""
 									}`}>

@@ -110,6 +110,7 @@ export default function Services() {
 	return (
 		<div
 			className="relative bg-[#d6d5d5] w-full h-screen overflow-hidden"
+			id="services"
 			ref={stickySectionRef}>
 			<div
 				className="absolute top-0 left-0 w-[250vw] h-full flex items-center justify-center will-change-transform"
@@ -121,7 +122,7 @@ export default function Services() {
 			{servicesItem.map((card, index) => (
 				<div
 					key={card.id}
-					className="absolute top-1/4 left-full w-[325px] bg-black rounded-[10px] p-3 will-change-transform z-20"
+					className="absolute left-full w-[325px] bg-black rounded-[10px] p-3 will-change-transform z-20"
 					ref={(el) => (cardsRef.current[index] = el!)}>
 					<div className="w-full h-[200px] rounded-lg overflow-hidden">
 						<Image

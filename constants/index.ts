@@ -132,24 +132,24 @@ export const TfooterItem = [
 
 export const links = [
     {
+        title: "About",
+        href: "about"
+    },
+    {
         title: "Projects",
-        href: "/projects"
+        href: "projects"
     },
     {
-        title: "Agency",
-        href: "/agency"
+        title: "Process",
+        href: "process"
     },
     {
-        title: "Expertise",
-        href: "/expertise"
-    },
-    {
-        title: "Careers",
-        href: "/careers"
+        title: "Services",
+        href: "services"
     },
     {
         title: "Contact",
-        href: "/contact"
+        href: "contact"
     }
 ];
 

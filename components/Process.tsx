@@ -18,7 +18,9 @@ export default function Process() {
 	};
 
 	return (
-		<section className="w-full my-[100px]">
+		<section
+			className="w-full my-[100px]"
+			id="process">
 			<div className="flex sm:flex-col lg:items-center gap-x-[20px] border-b border-[#8D8D8D] px-[50px]">
 				<h1 className="text-[#202020] uppercase leading-none sm:text-[80px] md:text-[100px] text-[100px] font-bold tracking-tight overflow-hidden">
 					{"process".split("").map((item: string, i: number) => (

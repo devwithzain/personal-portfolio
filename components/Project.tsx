@@ -27,7 +27,9 @@ export default function Project() {
 	const [modal, setModal] = useState({ active: false, index: 0 });
 
 	return (
-		<section className="w-full my-[100px]">
+		<section
+			className="w-full my-[100px]"
+			id="projects">
 			<Marquee baseVelocity={2}>
 				<h1 className="text-[#202020] uppercase text-[100px] font-bold tracking-tight flex items-center justify-center">
 					<span className="w-[40px] h-[40px] bg-[#8c8c8c] rounded-full mx-[20px]" />

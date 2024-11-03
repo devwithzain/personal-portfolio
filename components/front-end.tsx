@@ -41,7 +41,7 @@ export default function FrontEnd() {
 										transition={{
 											duration: 0.5,
 											ease: "easeInOut",
-											delay: index * 0.1,
+											delay: index * 0.01,
 										}}>
 										<LinkBox Icon={items.Icon} />
 									</motion.div>
