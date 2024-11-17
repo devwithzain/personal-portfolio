@@ -26,7 +26,7 @@ export { default as hero } from "./hero.webp";
 export { default as logo } from "./logo.gif";
 export { default as supadupa } from "./supadupa.png";
 export { default as lightsass } from "./lightsass.png";
-export { default as nike } from "./nike.png";
+export { default as flow } from "./flow.png";
 
 export { default as avatar1 } from "./avatar-1.png";
 export { default as avatar2 } from "./avatar-2.png";

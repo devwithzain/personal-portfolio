@@ -18,7 +18,7 @@ import { FaReact, FaFigma } from "react-icons/fa6";
 import { DiMongodb } from "react-icons/di";
 import { BiLogoPostgresql } from "react-icons/bi";
 
-import { avatar1, avatar10, avatar11, avatar12, avatar2, avatar3, avatar4, avatar5, avatar6, avatar7, avatar8, avatar9, github, img1, img2, img3, img4, img5, lightsass, metaverse, nike, ochi, supadupa, } from "@public";
+import { avatar1, avatar10, avatar11, avatar12, avatar2, avatar3, avatar4, avatar5, avatar6, avatar7, avatar8, avatar9, flow, github, img1, img2, img3, img4, img5, lightsass, metaverse, ochi, supadupa, } from "@public";
 
 export const project = [
     {
@@ -46,10 +46,10 @@ export const project = [
     },
     {
         id: 4,
-        title: "LightSass",
-        img: lightsass,
-        color: "#0D1EA2",
-        href: "https://light-sass-landing-page-devwithzain.vercel.app/"
+        title: "Flow Party",
+        img: flow,
+        color: "#B3EB16",
+        href: "https://flowparty-website-clone-by-devwithzain.vercel.app/"
     },
     {
         id: 5,
@@ -60,10 +60,10 @@ export const project = [
     },
     {
         id: 6,
-        title: "Nike",
-        img: nike,
-        color: "#ECEEFF",
-        href: "https://nike-woad-one.vercel.app/"
+        title: "LightSass",
+        img: lightsass,
+        color: "#0D1EA2",
+        href: "https://light-sass-landing-page-devwithzain.vercel.app/"
     },
 ];
 
